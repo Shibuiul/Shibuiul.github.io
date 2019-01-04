@@ -10,10 +10,9 @@
 
 <body>
 	<header>
-		<div class="header__border__top"></div>
-		<a class="logo logo_link" href="#"></a>
+		<a href="#"><img class="logo src="#"></a>
 		<span>Das offizielle Hauptstadtportal</span>
-		<input type="textarea" name="search">
+		<input type="text" name="search">
 		<label>
 			<span>&</span>
 		    <a href="#">Stadtplan</a>
@@ -26,11 +25,11 @@
 			<label><a href="#">Wirtschaft</a></label>
 			<label><a href="#">Lifestyle</a></label>
 			<label><a href="#">BerlinFinder</a></label>
-			<label>
+			<label for="burger">
 				<span>& </span>
-			    <input type="checkbox" name="burger">
 		    </label>
-		    <div class="menu__submenu _hidden">
+		    <input type="checkbox" name="burger">
+		    <div class="menu__submenu _invisible">
 		    	<div>
 		    		<label for="Politik">Politik, Verwaltung, Burger</label>
 		    		<input type="radio" name="submenu__left_chooser" id="Politik">
@@ -80,7 +79,7 @@
 		    	<div>
 		    		<label for="Kultur">Kultur & Ausgehen</label>
 		    		<input type="radio" name="submenu__left_chooser" id="Kultur">
-		    		<div class="menu__submenu__Kultur">
+		    		<div class="menu__submenu__Kultur _hidden">
 		    			<div><label><a href="#">Zur Startseite: Kultur & Ausgehen</a></label></div>
 		    			<div>
 		    				<p><a href="#">Tickets</a></p>
@@ -129,7 +128,7 @@
 		    	<div>
 		    		<label for="Tourismus">Tourismus</label>
 		    		<input type="radio" name="submenu__left_chooser" id="Tourismus">
-		    		<div class="menu__submenu__Tourismus">
+		    		<div class="menu__submenu__Tourismus _hidden">
 		    			<div><label><a href="#">Zur Startseite: Tourismus</a></label></div>
 		    			<div>
 		    				<p><a href="#">Sightseeing</a></p>
@@ -178,7 +177,7 @@
 		    	<div>
 		    		<label for="Wirtschaft">Wirtschaft</label>
 		    		<input type="radio" name="submenu__left_chooser" id="Wirtschaft">
-		    		<div class="menu__submenu__Wirtschaft">
+		    		<div class="menu__submenu__Wirtschaft _hidden">
 		    			<label><a href="#">Zur Startseite: Wirtschaft</a></label>
 		    			<div>
 		    				<p><a href="#">Wirtschaftsstandort</a></p>
@@ -221,7 +220,7 @@
 		    	<div>
 		    		<label for="Lifestyle">Lifestyle</label>
 		    		<input type="radio" name="submenu__left_chooser" id="Lifestyle">
-		    	    <div class="menu__submenu__Lifestyle">
+		    	    <div class="menu__submenu__Lifestyle _hidden">
 		    	    	<label><a href="#">Zur Startseite: Lifestyle</a></label>
 		    	    	<div>
 		    	    		<p><a href="#">Shopping</a></p>
@@ -270,7 +269,7 @@
 		    	<div>
 		    		<label for="BerlinFinder">BerlinFinder</label>
 		    		<input type="radio" name="submenu__left_chooser" id="BerlinFinder">
-		    		<div class="menu__submenu__BerlinFinder">
+		    		<div class="menu__submenu__BerlinFinder _hidden">
 		    			<label><a href="#">Zur Startseite: BerlinFinder</a></label>
 		    			<div>
 		    				<p><a href="#">Finanzen & Recht</a></p>
@@ -521,11 +520,394 @@
 				    </div>
 				</div>
 			</div>
-			<div></div>
-			<div></div>
-		    <div></div>
-		    <div></div>
-		    <div></div>
+			<div class="main__first-block_grid">
+				<div>
+				    <h3>Politik, Verwaltung, Bürger</h3>
+			    </div>
+			    <div id="main__first-block_left-column">
+			    	<label>
+			    		<a href="#">Pressemitteilungen</a>
+			    	</label>
+			    	<label>
+			    		<a href="#">Termine des Regierenden Bürgermeisters</a>
+			    	</label>
+			    	<label>
+			    		<a href="#">Rathaus Aktuell</a>
+			    	</label>
+			    	<label>
+			    		<a href="#">Verwaltung A-Z</a>
+			    	</label>
+			    	<label>
+			    		<a href="#">Dienstleistungen der Verwaltung</a>
+			    	</label>
+			    	<label>
+			    		<a href="#">Terminvereinbarung</a>
+			    	</label>
+			    	<label>
+			    		<a href="#">Bürgertelefon 115</a>
+			    	</label>
+			    	<label>
+			    		<a href="#">Bürgerbeteiligung</a>
+			    	</label>
+			    </div>
+			    <div id="main__first-block_center-column">
+			    	<img src="#">
+			    	<a href="#">Mehr Sozialer Wohnungsbau</a>
+			    	<p>
+			    	    Steigerung bei geförderten Wohnungen in Berlin: Insgesamt entstehen 3589 neue preisgünstige Sozialwohnungen.
+			    	    <a href="#">mehr »</a>
+			        </p>
+			    </div>
+			    <div id="main__first-block_right-column">
+			    	<div>
+			    	    <a href="#">Auf die Plätze, Kitas, los!</a>
+			    	    <p>
+			    		    Berlin investiert 46 Mio. Euro für 4204 neue Kita-Plätze.
+			    		    <a href="#">mehr »</a>
+			    	    </p>
+			        </div>
+			        <div>
+			        	<a href="#">Neuerung in der AV-Wohnen</a>
+			        	<p>
+			        		Übernahme der Mitgliederbeiträge für den Berliner Mieterverein.
+			        		<a href="#">mehr »</a>
+			        	</p>
+			        </div>
+			        <div>
+			        	<a href="#">Online-Handel</a>
+			        	<p>
+			        		Umsatzsteuer: Ab 2019 gelten neue Vorschriften für Marktplatzbetreiber.
+			        		<a href="#">mehr »</a>
+			        	</p>
+			        </div>
+			    </div>
+			    <div id="main__first-block__second-row_center-column">
+			    	<a href="#">Richtlinien der Regierungspolitik</a>
+			    	<a href="#">Sicherheit - Präventions- und Sicherheitspaket des Senats</a>
+			    	<a href="#">Wissenschaft und Universitäten - Berlin als Wissenschaftsregion</a>
+			    	<a href="#">Forschung - Berliner Forschungslandschaft</a>
+			    	<a href="#">Regierender Bürgermeister Michael Müller - Reden, Filme, Interviews</a>
+			    	<a href="#">Fragen und Probleme - Bürgerberatung des Regierenden Bürgermeisters</a>
+			    	<a href="#">Landesregierung von Berlin - Senatorinnen und Senatoren</a>
+			    	<a href="#">NUR MIT EUCH - die Berliner Bundesratspräsidentschaft</a>
+			    </div>
+			    <div id="main__first-block__second-row_right-column">
+			    	<img src="#">
+			    	<a href="#">Ehrenamt: Berlin sagt Danke!</a>
+			    	<p>
+			    		Am 16. Februar 2019 bedanken sich Senat und Abgeordnetenhaus für das freiwillige Engagement.
+			    		<a href="#">mehr »</a>
+			    	</p>
+			    </div>
+			</div>
+			<div class="main__second-block_grid">
+				<div>
+					<h3>Tourismus & Hotels</h3>
+				</div>
+				<div id="main__second-block_left-column">
+					<label>
+						<a href="#">Hotels in Berlin</a>
+					</label>
+					<label>
+						<a href="#">Sehenswürdigkeiten</a>
+					</label>
+					<label>
+						<a href="#">Öffentlicher Nahverkehr</a>
+					</label>
+					<label>
+						<a href="#">Schiffstouren</a>
+					</label>
+					<label>
+						<a href="#">Stadtführungen</a>
+					</label>
+					<label>
+						<a href="#">Stadtrundfahrten</a>
+					</label>
+					<label>
+						<a href="#">Berlin Infos A-Z</a>
+					</label>
+				</div>
+				<div id="main__second-block_center-column">
+					<img src="#">
+					<a href="#">Hop-on Hop-off Tour mit 24h-Ticket</a>
+					<p>
+						Entdecken Sie 24 Stunden lang die wichtigsten Sehenswürdigkeiten Berlins per Hop-on Hop-off-Bustour.
+						<a href="">mehr »</a>
+					</p>
+				</div>
+				<div id="main__second-block_right-column">
+					<img src="#">
+					<a href="#">Winterfahrt über die Spree</a>
+					<p>Entdecken Sie das winterliche Berlin und die Sehenswürdigkeiten der Stadt entspannt an Bord eines Schiffes.
+						<a href="#">mehr »</a>
+					</p>
+				</div>
+				<div id="main__second-block__second-row_center-column">
+					<img src="#">
+					<a href="#">Berlin Touristen Cards: Welche ist am besten?</a>
+					<p>Ein Vergleich zeigt: Mit der Wahl der richtigen Touristen Card können Besucher in Berlin viel Geld sparen.
+						<a href="#">mehr »</a>
+					</p>
+				</div>
+				<div id="main__second-block__second-row_right-column">
+					<img src="#">
+					<a href="#">Grüne Woche</a>
+					<p>Lebenskünstler willkommen! Wie steht es um die ökologische Landwirtschaft? Fragen und Antworten finde Sie in Halle 1.2.
+						<a href="#">mehr »</a>
+					</p>
+				</div>
+				<div>
+					<h3>Kultur & Ausgehen</h3>
+				</div>
+				<div id="main__second-block__third-row_left-column">
+					<label>
+						<a href="#">Event-Highlights</a>
+					</label>
+					<label>
+						<a href="#">Museumsführer</a>
+					</label>
+					<label>
+						<a href="#">Ausstellungen</a>
+					</label>
+					<label>
+						<a href="#">Tickets</a>
+					</label>
+					<label>
+						<a href="#">Kinoprogramm</a>
+					</label>
+					<label>
+						<a href="#">Restaurant-Guide</a>
+					</label>
+					<label>
+						<a href="#">Clubs & Party</a>
+					</label>
+				</div>
+				<div id="main__second-block__third-row_center-column">
+					<img src="#">
+					<a href="#">Pergamon-Panorama</a>
+					<p>
+						In dem neuen Pergamon-Panorama des Künstlers Yadegar Asisi sind Originalteile des Pergamonaltars sowie eine Videoinstallation zum Pergamonaltar zu besichtigen.
+						<a href="#">mehr »</a>
+					</p>
+				</div>
+				<div id="main__second-block__third-row_right-column">
+					<img src="#">
+					<a href="#">Handball-WM 2019</a>
+					<p>
+						Im Januar 2019 veranstalten Deutschland und Dänemark die Handball Weltmeisterschaft. In den Turnieren treten 24 Mannschaften aus Europa, Amerika, Asien und Ozeanien gegeneinander an.
+						<a href="#">mehr »</a>
+					</p>
+				</div>
+				<div id="main__second-block__fourth-row_center-column">
+					<img src="#">
+					<a href="#">Special: Action & Abenteuer</a>
+					<p>
+						Paintball, House-Running, Lasergame & Co.: Die besten Adressen in Berlin für Action, Abenteuer und Trendsportarten.
+						<a href="#">mehr »</a>
+					</p>
+				</div>
+				<div id="main__second-block__fourth-row_right-column">
+					<img src="#">
+					<a href="#">Tanz der Vampire</a>
+					<p>
+						Das Meisterwerk verlässt Deutschland. Nur noch bis März 2019 im Berliner Stage Theater des Westens.
+						<a href="#">mehr »</a>
+					</p>
+				</div>
+				<div>
+					<h3>Aktuelle Meldungen</h3>
+				</div>
+				<div id="main__second-block__fifth-row_left-column">
+					<label><a href="#"></a>Aktuelle Nachrichten</label>
+					<label><a href="#"></a>Polizeiticker</label>
+					<label><a href="#"></a>Baustellen und Sperrungen</label>
+					<label><a href="#"></a>Störungen im Nahverkehr</label>
+					<label><a href="#"></a>Wetter</label>
+				</div>
+				<div id="main__second-block__fifth-row_center-column">
+					<a href="#">Polizei–Meldungen</a>
+					<div>
+						<p>3. Januar</p>
+						<p>20:00 Uhr</p>
+						<a href="#">Seniorin bei Unfall schwer verletzt</a>
+					</div>
+					<div>
+						<p>3. Januar</p>
+						<p>09:50 Uhr</p>
+						<a href="#">Senior verstorben</a>
+					</div>
+					<div>
+						<p>3. Januar</p>
+						<p>09:27 Uhr</p>
+						<a href="#">Nach Streit mit Messer ins Bein gestochen</a>
+					</div>
+					<div>
+						<p>3. Januar</p>
+						<p>09:22 Uhr</p>
+						<a href="#">Imbiss beraubt</a>
+					</div>
+					<div>
+						<p>3. Januar</p>
+						<p>09:19 Uhr</p>
+						<a href="#">Einnahmen geraubt</a>
+					</div>
+				</div>
+				<div id="main__second-block__fifth-row_right-column">
+					<a href="#">dpa–Nachrichtenticker</a>
+					<div>
+						<p>4. Januar</p>
+						<p>02:10 Uhr</p>
+						<a href="#">Frauen bei Massagen sexuell belästigt? Therapeut vor Gericht</a>
+					</div>
+					<div>
+						<p>4. Januar</p>
+						<p>01:10 Uhr</p>
+						<a href="#">Partnerin aus Eifersucht erstochen? Mordprozess beginnt</a>
+					</div>
+					<div>
+						<p>4. Januar</p>
+						<p>21:00 Uhr</p>
+						<a href="#">Fußgängerin wird bei Unfall durch die Luft geschleudert</a>
+					</div>
+					<div>
+						<p>4. Januar</p>
+						<p>20:40 Uhr</p>
+						<a href="#">ALBA Berlin schlägt im Eurocup AS Monaco</a>
+					</div>
+					<div>
+						<p>4. Januar</p>
+						<p>18:30 Uhr</p>
+						<a href="#">Zwei Festnahmen nach Verbrechen an junger Frau in Neukölln</a>
+					</div>
+				</div>
+				<div id="main__second-block__sixth-row_left-column">
+					<label><a href="#">Gesundheit & Beauty</a></label>
+					<label><a href="#">Immobilien & Wohnen</a></label>
+					<label><a href="#">Jobs & Ausbildung</a></label>
+					<label><a href="#">Finanzen & Recht</a></label>
+					<label><a href="#">Auto & Motor</a></label>
+					<label><a href="#">Computer & Handy</a></label>
+					<label><a href="#">Reisen & Ausflüge</a></label>
+				</div>
+				<div id="main__second-block__sixth-row_center-column">
+					<img src="#">
+					<a href="#">Weihnachtsbaumabholung</a>
+					<p>
+						Im Januar holt die BSR die ausgedienten Weihnachtsbäume ab. Die Termine für jeden Bezirk im Überblick.
+						<a href="#">mehr »</a>
+					</p>
+				</div>
+				<div id="main__second-block__sixth-row_right-column">
+					<img src="#">
+					<a href="#">Das ändert sich 2019</a>
+					<p>Im neuen Jahr kommen auf Verbraucher in vielen Bereichen Neuerungen zu. Die wichtigsten Änderungen im Überblick.
+						<a href="#">mehr »</a>
+					</p>
+				</div>
+				<div id="main__second-block__seventh-row_center-column">
+					<img src="#">
+					<a href="#">Rotkohl mit Orangen-Vinaigrette</a>
+					<p>
+						Ein Backblech vollgepackt mit Aromen von fruchtiger Orange, süßen Cashewkernen und knackigem Rotkohl.
+						<a href="#">mehr »</a>
+					</p>
+				</div>
+				<div id="main__second-block__seventh-row_right-column">
+					<a href="#">Oft gesucht</a>
+					<a href="#">Eventlocations</a>
+					<a href="#">Tickets</a>
+					<a href="#">WLAN</a>
+					<a href="#">Messekalender</a>
+					<a href="#">Umzug</a>
+					<a href="#">Jobs & Praktika bei berlin.de</a>
+				</div>
+			</div>
+		    <div class="main__third-block_grid">
+		    	<h3>Wirtschaft</h3>
+		    	<div id="main__third-block_left-column">
+		    		<label><a href="#">Wirtschaftsatlas Berlin</a></label>
+		    		<label><a href="#">Investieren</a></label>
+		    		<label><a href="#">Gewerbeimmobilien und –flächen</a></label>
+		    		<label><a href="#">Internationales</a></label>
+		    		<label><a href="#">Wirtschaftsstandort</a></label>
+		    		<label><a href="#">Messekalender</a></label>		    		
+		    	</div>
+		    	<div id="main__third-block_center-column">
+		    		<img src="#">
+		    		<a href="#">Gründer-Interview: Benjamin Maischak</a>
+		    		<p>
+		    			Mit der JobUfo-App können sich Jugendliche per Smartphone-Video bei Unternehmen bewerben.
+		    			<a href="#">mehr »</a>
+		    		</p>
+		    	</div>
+		    	<div id="main__third-blockright-column">
+		    		<img src="#">
+		    		<a href="#">Messe: Modellbahnbörse Berlin</a>
+		    		<p>
+		    			Sammler können hier Modelleisenbahnen und -autos tauschen, kaufen und verkaufen.
+		    			<a href="#">mehr »</a>
+		    		</p>
+		    	</div>
+		    	<div id="main__third-block__second-row_center-column">
+		    		<img src="#">
+		    		<a href="#">Bauprojekt: Pandion 4Living</a>
+		    		<p>
+		    			In Prenzlauer Berg wird bis 2020 ein Wohnensemble mit über 350 Eigentumswohnungen errichtet.
+		    			<a href="#">mehr »</a>
+		    		</p>
+		    	</div>
+		    	<div id="main__third-block__second-row_right-column">
+		    		<img src="#">
+		    		<a href="#">Event-Locations in Berlin</a>
+		    		<p>
+		    			Ob Firmenevent, Produktpräsentation oder Hochzeitsfest: Berlin bietet Veranstaltungsorte in jeglicher Größe und für jeden Bedarf.
+		    			<a href="#">mehr »</a>
+		    		</p>
+		    	</div>
+		    </div>
+		    <div id="main__fourth-block_grid">
+		    	<div id="main__fourth-block_left-column">
+		    		<label><a href="#">Neueröffnungen</a></label>
+		    		<label><a href="#">Veranstaltungen</a></label>
+		    		<label><a href="#">Flohmärkte</a></label>
+		    		<label><a href="#">Einkaufscenter</a></label>
+		    		<label><a href="#">Einkaufsmeilen</a></label>
+		    		<label><a href="#">Sonntagsshopping</a></label>
+		    		<label><a href="#">Factory Outlets</a></label>
+		    	</div>
+		    	<div id="main__fourth-block_center-column">
+		    		<img src="#">
+		    		<a href="#">Neueröffnung: Iittala</a>
+		    		<p>
+		    			Gleiche Straße, neue Räume: Die finnische Designmarke Iittala hat einen neuen Store in der Friedrichstraße eröffnet.
+		    			<a href="#">mehr »</a>
+		    		</p>
+		    	</div>
+		    	<div id="main__fourth-block_right-column">
+		    		<img src="#">
+		    		<a href="#">Tauschbörse für Weihnachtsgeschenke</a>
+		    		<p>
+		    			Wieder Socken? Mit Glück gibt es bei der Tauschbörse etwas anderes dafür.
+		    			<a href="#">mehr »</a>
+		    		</p>
+		    	</div>
+		    	<div id="main__fourth-block__second-row_center-column">
+		    		<img src="#">
+		    		<a href="#">Verkaufsoffener Sonntag</a>
+		    		<p>
+		    			Zum nächsten verkaufsoffenen Sonntag am 27. Januar öffnen viele Einkaufszentren und Geschäfte von 13 bis 18 Uhr.
+		    			<a href="#">mehr »</a>
+		    		</p>
+		    	</div>
+		    	<div id="main__fourth-block__second-row_right-column">
+		    		<img src="#">
+		    		<a href="#">Das neue Show-Erlebnis!</a>
+		    		<p>
+		    			Diese Blue Man Group gibt es nur in Berlin! Jetzt noch länger, noch überraschender und noch näher dran!
+		    			<a href="#">mehr »</a>
+		    		</p>
+		    	</div>
+		    </div>
 		</div>
 	</main>
 
@@ -533,7 +915,7 @@
 		<div class="grid_footer">
 			<label class="footer__link_to-top"><a href="#header">Zum Seitenanfang</a></label>
 		    <div><img class="logo" src="#"></div>
-		    <div><input type="textarea" name="search"></div>
+		    <div><input type="text" name="search"></div>
 		    <div>
 			    <span>Berlin.de Newsletter</span>
 			    <p>Die Tipps für das Wochenende und für den kommenden Monat, ausgewählt von der Berlin.de-Redaktion. Kostenlos direkt in Ihr Postfach.</p>

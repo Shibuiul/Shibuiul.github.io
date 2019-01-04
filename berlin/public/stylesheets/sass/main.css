@@ -1,3 +1,45 @@
+.menu {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+.menu label a {
+  padding: 1.5em;
+  background-color: #f5f5f5;
+}
+.menu label span {
+  padding: 2em;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.burger:checked menu__submenu {
+  visibility: visible;
+  display: block;
+}
+
+.grid_footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-remplate-rows: 1fr 1fr 1fr 1fr;
+}
+
+._hidden {
+  display: none;
+}
+
+._invisible {
+  visibility: hidden;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
 * {
   margin: 0px;
   background-color: #fff;
