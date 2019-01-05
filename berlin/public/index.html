@@ -10,14 +10,16 @@
 
 <body>
 	<header>
-		<a href="#"><img class="logo src="#"></a>
+		<div class="header__top">
+		<a href="#"><img class="logo src="images/logo_berlin_de.svg"></a>
 		<span>Das offizielle Hauptstadtportal</span>
 		<input type="text" name="search">
 		<label>
 			<span>&</span>
 		    <a href="#">Stadtplan</a>
 		</label>
-			<a href="#">DE</a>
+			<a class="header__top__language-button" href="#">DE <span>&</span></a>
+		</div>
 		<div class="menu">
 			<label><a href="#">Politik, Verwaltung, Burger</a></label>
 			<label><a href="#">Kultur & Ausgehen</a></label>
@@ -28,8 +30,8 @@
 			<label for="burger">
 				<span>& </span>
 		    </label>
-		    <input type="checkbox" name="burger">
-		    <div class="menu__submenu _invisible">
+		    <input type="checkbox" name="burger" id="burger">
+		    <div class="menu__submenu _hidden">
 		    	<div>
 		    		<label for="Politik">Politik, Verwaltung, Burger</label>
 		    		<input type="radio" name="submenu__left_chooser" id="Politik">
