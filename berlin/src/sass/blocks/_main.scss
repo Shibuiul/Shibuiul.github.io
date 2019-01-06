@@ -1,0 +1,99 @@
+.grid__main {
+    position: relative;
+	display: grid;
+    grid-template-columns: 100%;
+	grid-template-rows: 0.5fr 1fr 2.5fr 0.5fr 1fr;
+	grid-template-areas:
+	"grid__main_mini"
+	"main__first-block_grid"
+	"main__second-block_grid"
+	"main__third-block_grid"
+	"main__fourth-block_grid";
+}
+
+.grid__main_mini {
+	grid-area: grid__main_mini;
+}
+.main__first-block_grid {
+	grid-area: main__first-block_grid;
+}
+.main__second-block_grid {
+	grid-area: main__second-block_grid;
+}
+.main__third-block_grid {
+	grid-area: main__third-block_grid;
+}
+.main__fourth-block_grid {
+	grid-area: main__fourth-block_grid;
+}
+
+
+
+.grid__main_mini {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-tamplate-rows: 1fr 1fr;
+	grid-template-areas:
+	"images__block grid__main_mini__service-block"
+	"aktuell immobiliensuche";
+}
+
+.images__block {
+	grid-area: images__block;
+}
+.grid__main_mini__service-block {
+	grid-area: grid__main_mini__service-block;
+}
+.aktuell {
+	grid-area: aktuell;
+}
+.immobiliensuche {
+	grid-area: immobiliensuche;
+}
+
+
+.main__first-block_grid {
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:
+	"main__first-block_left-column main__first-block_center-column main__first-block_right-column"
+	". main__first-block__second-row_center-column main__first-block__second-row_right-column";
+}
+
+.main__first-block_left-column {
+	grid-area: main__first-block_left-column;
+}
+.main__first-block_center-column {
+	grid-area: main__first-block_center-column;
+}
+.main__first-block_right-column {
+	grid-area: main__first-block_right-column;
+}
+.main__first-block__second-row_center-column{
+	grid-area: main__first-block__second-row_center-column;
+}
+.main__first-block__second-row_right-column {
+	grid-area: main__first-block__second-row_right-column;
+}
+
+
+.main__second-block_grid {
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 2fr 2fr 1fr 2fr;
+}
+
+
+.main__third-block_grid {
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+
+.main__fourth-block_grid {
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}

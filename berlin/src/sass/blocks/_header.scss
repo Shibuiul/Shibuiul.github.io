@@ -50,8 +50,7 @@ header {
 	}
 }
 
-.burger:checked ~ menu__submenu {
-	visibility: visible;
+.burger:checked ~ .menu__submenu {
 	display: block;
-	position: relative;
+	position: absolute;
 }
