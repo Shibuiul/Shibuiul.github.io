@@ -1,5 +1,7 @@
 .grid_footer {
+    background-color: #253276;
+    color: white;
 	display: grid;
 	grid-template-columns: 1fr 2fr;
-	grid-remplate-rows: 1fr 1fr 1fr 1fr;
+	grid-remplate-rows: 10% 10% 40% 40%;
 }
