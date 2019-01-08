@@ -319,7 +319,7 @@
 	<main>
 		<div class="grid__main">
 			<div class="grid__main_mini">
-			  <div class="images__block"></div>
+			  <div class="images__block">#</div>
 				<div class="grid__main_mini__service-block">
 					<div>
 					<label for="service">
@@ -412,29 +412,25 @@
 				  </div>
 				</div>
 			  </div>
-				<div class="aktuell">
-					<div>
+			  <div class="aktuell_top-panel">
 						<p>Berlin Aktuell</p>
 						<label for="arrow">
 							<span>&</span>
 						</label>
                         <input class="_hidden" type="checkbox" name="arrow" id="arrow">
 					</div>
+				<div class="aktuell">
 					<div>
+						<a href="#">Alles Gute für 2019</a>
 						<div>
-							<a href="#">Alles Gute für 2019</a>
-						</div>
-						<div>
-							<img src="#">
+							<img src="images/aktuell-block/first.jpg">
 						</div>
 						<div>
 							<p>Michael Müller zum neuen Jahr. <a href="#">mehr</a></p>
 						</div>
 					</div>
 					<div>
-						<div>
-							<a href="#">Nachrichten</a>
-						</div>
+					    <a href="#">Nachrichten</a>
 						<div>
 							<a href="#">Kugeliges Eisbärenbaby übersteht Jahreswechsel gut</a>
 						</div>
@@ -449,11 +445,9 @@
 						</div>
 					</div>
 					<div>
+						<a href="#">Fotos</a>
 						<div>
-							<a href="#">Fotos</a>
-						</div>
-						<div>
-							<img src="#">
+							<img src="images/aktuell-block/second.jpg">
 						</div>
 						<div>
 							<p>
@@ -463,28 +457,19 @@
 						</div>
 					</div>
 					<div>
+						<a href="#">Gratis</a>
 						<div>
-							<a href="#">Gratis</a>
-						</div>
-						<div>
-							<img src="#">
+							<img src="images/aktuell-block/third.jpg">
 						</div>
 						<div>
 							<p>Geschichten in Jurten<a href="#">mehr »</a></p>
 						</div>
 					</div>
 					<div>
-						<div>
-							<a href="#">Wetter</a>
-						</div>
+						<a href="#">Wetter</a>
 						<div class="weather__grid_mini">
-							<img src="#">
-							<span>1.6 C <br> Klar</span>
-						</div>
-						<div>
-							<span>16:00 Uhr</span>
-							<span>16:00 Uhr</span>
-							<span>16:00 Uhr</span>
+							<img src="images/aktuell-block/weather.png">
+							
 						</div>
 						<div>
 							<a class="text_small" href="#">Alles anzeigen »</a>
@@ -492,16 +477,16 @@
 					</div>
 					<div>
 						<a href="#">Störungen im Nahverkehr</a>
-					</div>
-					<div>
-						<img src="#">
-					</div>
-					<div>
-						<p>
-							Aktuelle Informationen zu Störungen und
-							<a href="#">mehr »</a>
-						</p>
-					</div>
+					    <div>
+						    <img src="images/aktuell-block/fourth.jpg">
+					    </div>
+					    <div>
+						    <p>
+							    Aktuelle Informationen zu Störungen und
+							    <a href="#">mehr »</a>
+						    </p>
+					    </div>
+				    </div>
 				</div>
 				<div class="immobiliensuche">
 					<div>
@@ -525,32 +510,34 @@
 				</div>
 			</div>
 			<div class="main__first-block_grid">
-			    <div id="main__first-block_left-column">
+			    <div class="main__first-block_left-column">
 			    	<h3>Politik, Verwaltung, Bürger</h3>
-			    	<label>
-			    		<a href="#">Pressemitteilungen</a>
-			    	</label>
-			    	<label>
-			    		<a href="#">Termine des Regierenden Bürgermeisters</a>
-			    	</label>
-			    	<label>
-			    		<a href="#">Rathaus Aktuell</a>
-			    	</label>
-			    	<label>
-			    		<a href="#">Verwaltung A-Z</a>
-			    	</label>
-			    	<label>
-			    		<a href="#">Dienstleistungen der Verwaltung</a>
-			    	</label>
-			    	<label>
-			    		<a href="#">Terminvereinbarung</a>
-			    	</label>
-			    	<label>
-			    		<a href="#">Bürgertelefon 115</a>
-			    	</label>
-			    	<label>
-			    		<a href="#">Bürgerbeteiligung</a>
-			    	</label>
+			    	<div class="buttons-block">
+			    	    <label>
+			    		    <a href="#">Pressemitteilungen</a>
+			    	    </label>
+			    	    <label>
+			    		    <a href="#">Termine des Regierenden<br> Bürgermeisters</a>
+			    	    </label>
+			    	    <label>
+			    	    	<a href="#">Rathaus Aktuell</a>
+			    	    </label>
+			    	    <label>
+			    	    	<a href="#">Verwaltung A-Z</a>
+			    	    </label>
+			    	    <label>
+			    	    	<a href="#">Dienstleistungen der Verwaltung</a>
+			    	    </label>
+			    	    <label>
+			    	    	<a href="#">Terminvereinbarung</a>
+			    	    </label>
+			    	    <label>
+			    	    	<a href="#">Bürgertelefon 115</a>
+			    	    </label>
+			    	    <label>
+			    	    	<a href="#">Bürgerbeteiligung</a>
+			    	    </label>
+			    	</div>
 			    </div>
 			    <div id="main__first-block_center-column">
 			    	<img src="images/main__first-block/center.jpg">
@@ -604,6 +591,7 @@
 			</div>
 			<div class="main__second-block_grid">
 				<div class="main__second-block_left-column">
+				  <div class="buttons-block">
 					<h3>Tourismus & Hotels</h3>
 					<label>
 						<a href="#">Hotels in Berlin</a>
@@ -626,6 +614,7 @@
 					<label>
 						<a href="#">Berlin Infos A-Z</a>
 					</label>
+				  </div>
 				</div>
 				<div class="main__second-block_center-column">
 					<img src="images/main__second-block/center.jpg">
@@ -657,6 +646,7 @@
 					</p>
 				</div>
 				<div class="main__second-block__third-row_left-column">
+				  <div class="buttons-block">
 					<h3>Kultur & Ausgehen</h3>
 					<label>
 						<a href="#">Event-Highlights</a>
@@ -679,6 +669,7 @@
 					<label>
 						<a href="#">Clubs & Party</a>
 					</label>
+				  </div>
 				</div>
 				<div class="main__second-block__third-row_center-column">
 					<img src="images/main__second-block/row-3_center.jpg">
@@ -713,12 +704,14 @@
 					</p>
 				</div>
 				<div class="main__second-block__fifth-row_left-column">
+				  <div class="buttons-block">
 					<h3>Aktuelle Meldungen</h3>
-					<label><a href="#"></a>Aktuelle Nachrichten</label>
-					<label><a href="#"></a>Polizeiticker</label>
-					<label><a href="#"></a>Baustellen und Sperrungen</label>
-					<label><a href="#"></a>Störungen im Nahverkehr</label>
-					<label><a href="#"></a>Wetter</label>
+					<label><a href="#">Aktuelle Nachrichten</a></label>
+					<label><a href="#">Polizeiticker</a></label>
+					<label><a href="#">Baustellen und Sperrungen</a></label>
+					<label><a href="#">Störungen im Nahverkehr</a></label>
+					<label><a href="#">Wetter</a></label>
+				  </div>
 				</div>
 				<div class="main__second-block__fifth-row_center-column">
 					<a href="#">Polizei–Meldungen</a>
@@ -777,6 +770,8 @@
 					</div>
 				</div>
 				<div class="main__second-block__sixth-row_left-column">
+				  <div class="buttons-block">
+				  	<h3>Lifestyle</h3>
 					<label><a href="#">Gesundheit & Beauty</a></label>
 					<label><a href="#">Immobilien & Wohnen</a></label>
 					<label><a href="#">Jobs & Ausbildung</a></label>
@@ -784,6 +779,7 @@
 					<label><a href="#">Auto & Motor</a></label>
 					<label><a href="#">Computer & Handy</a></label>
 					<label><a href="#">Reisen & Ausflüge</a></label>
+				  </div>
 				</div>
 				<div class="main__second-block__sixth-row_center-column">
 					<img src="images/main__second-block/row-6_center.jpg">
@@ -820,13 +816,27 @@
 			</div>
 		    <div class="main__third-block_grid">
 		    	<div class="main__third-block_left-column">
+		    	  <div class="buttons-block">
 		    		<h3>Wirtschaft</h3>
-		    		<label><a href="#">Wirtschaftsatlas Berlin</a></label>
-		    		<label><a href="#">Investieren</a></label>
-		    		<label><a href="#">Gewerbeimmobilien und –flächen</a></label>
-		    		<label><a href="#">Internationales</a></label>
-		    		<label><a href="#">Wirtschaftsstandort</a></label>
-		    		<label><a href="#">Messekalender</a></label>		    		
+		    		<label>
+		    			<a href="#">Wirtschaftsatlas Berlin</a>
+		    		</label>
+		    		<label>
+		    			<a href="#">Investieren</a>
+		    		</label>
+		    		<label>
+		    			<a href="#">Gewerbeimmobilien und –flächen</a>
+		    		</label>
+		    		<label>
+		    			<a href="#">Internationales</a>
+		    		</label>
+		    		<label>
+		    			<a href="#">Wirtschaftsstandort</a>
+		    		</label>
+		    		<label>
+		    			<a href="#">Messekalender</a>
+		    		</label>
+		    	  </div>		    		
 		    	</div>
 		    	<div class="main__third-block_center-column">
 		    		<img src="images/main__third-block/center.jpg">
@@ -863,6 +873,7 @@
 		    </div>
 		    <div class="main__fourth-block_grid">
 		    	<div class="main__fourth-block_left-column">
+		          <div class="buttons-block">
 		    		<h3>Shopping</h3>
 		    		<label><a href="#">Neueröffnungen</a></label>
 		    		<label><a href="#">Veranstaltungen</a></label>
@@ -871,6 +882,7 @@
 		    		<label><a href="#">Einkaufsmeilen</a></label>
 		    		<label><a href="#">Sonntagsshopping</a></label>
 		    		<label><a href="#">Factory Outlets</a></label>
+		    	  </div>
 		    	</div>
 		    	<div class="main__fourth-block_center-column">
 		    		<img src="images/main__fourth-block/center.jpg">

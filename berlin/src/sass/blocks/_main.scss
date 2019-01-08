@@ -33,10 +33,14 @@
 .grid__main_mini {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
-	grid-tamplate-rows: 1fr 1fr;
+	grid-template-rows: 50% 10% 40%;
 	grid-template-areas:
 	"images__block grid__main_mini__service-block"
+	"aktuell_top-panel immobiliensuche"
 	"aktuell immobiliensuche";
+	border-bottom: 50px solid;
+	border-image: url("../../images/border.png");
+	border-image-slice: 0 0 50 0;
 }
 
 .images__block {
@@ -44,6 +48,9 @@
 }
 .grid__main_mini__service-block {
 	grid-area: grid__main_mini__service-block;
+}
+.aktuell_top-panel {
+	grid-area: aktuell_top-panel;
 }
 .aktuell {
 	grid-area: aktuell;
@@ -62,6 +69,9 @@
 	grid-template-areas:
 	"main__first-block_left-column main__first-block_center-column main__first-block_right-column"
 	". main__first-block__second-row_center-column main__first-block__second-row_right-column";
+    border-bottom: 50px solid;
+	border-image: url("../../images/border.png");
+	border-image-slice: 0 0 50 0;
 }
 
 .main__first-block_left-column {
@@ -95,6 +105,9 @@
 	"main__second-block__fifth-row_left-column main__second-block__fifth-row_center-column main__second-block__fifth-row_right-column"
 	"main__second-block__sixth-row_left-column main__second-block__sixth-row_center-column main__second-block__sixth-row_right-column"
 	". main__second-block__seventh-row_center-column main__second-block__seventh-row_right-column";
+	border-bottom: 50px solid;
+	border-image: url("../../images/border.png");
+	border-image-slice: 0 0 50 0;
 }
 
 .main__second-block_left-column {
@@ -163,6 +176,9 @@
 	grid-template-areas: 
 	"main__third-block_left-column main__third-block_center-column main__third-block_right-column"
 	". main__third-block__second-row_center-column main__third-block__second-row_right-column";
+	border-bottom: 50px solid;
+	border-image: url("../../images/border.png");
+	border-image-slice: 0 0 50 0;
 }
 
 .main__third-block_left-column {
@@ -186,7 +202,7 @@
 .main__fourth-block_grid {
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 35% 30%;
 	grid-column-gap: 1.1rem;
 	grid-template-areas: 
 	"main__fourth-block_left-column main__fourth-block_center-column main__fourth-block_right-column"
@@ -223,4 +239,42 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: local;
+}
+
+.aktuell {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    overflow: hidden;
+    overflow-x: scroll;
+    padding: 1rem;
+    
+    div {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
+
+        div {
+
+            a {
+                font-size: 0.85rem;
+            }
+        }
+    }
+    
+	img {
+	    width: 200px;
+	    height: 150px;
+	}
+}
+.aktuell_top-panel {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	border-bottom: 5px solid #e0e0e0;
+    font-weight: 700;
+	color: #253276;
 }

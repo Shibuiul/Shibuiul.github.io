@@ -83,8 +83,11 @@ header input[type=text] {
 .grid__main_mini {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-tamplate-rows: 1fr 1fr;
-  grid-template-areas: "images__block grid__main_mini__service-block" "aktuell immobiliensuche";
+  grid-template-rows: 50% 10% 40%;
+  grid-template-areas: "images__block grid__main_mini__service-block" "aktuell_top-panel immobiliensuche" "aktuell immobiliensuche";
+  border-bottom: 50px solid;
+  border-image: url("../../images/border.png");
+  border-image-slice: 0 0 50 0;
 }
 
 .images__block {
@@ -93,6 +96,10 @@ header input[type=text] {
 
 .grid__main_mini__service-block {
   grid-area: grid__main_mini__service-block;
+}
+
+.aktuell_top-panel {
+  grid-area: aktuell_top-panel;
 }
 
 .aktuell {
@@ -110,6 +117,9 @@ header input[type=text] {
   grid-column-gap: 1.1rem;
   grid-row-gap: 2rem;
   grid-template-areas: "main__first-block_left-column main__first-block_center-column main__first-block_right-column" ". main__first-block__second-row_center-column main__first-block__second-row_right-column";
+  border-bottom: 50px solid;
+  border-image: url("../../images/border.png");
+  border-image-slice: 0 0 50 0;
 }
 
 .main__first-block_left-column {
@@ -139,6 +149,9 @@ header input[type=text] {
   grid-column-gap: 1.1rem;
   grid-row-gap: 2rem;
   grid-template-areas: "main__second-block_left-column main__second-block_center-column main__second-block_right-column" ". main__second-block__second-row_center-column main__second-block__second-row_right-column" "main__second-block__third-row_left-column main__second-block__third-row_center-column main__second-block__third-row_right-column" ". main__second-block__fourth-row_center-column main__second-block__fourth-row_right-column" "main__second-block__fifth-row_left-column main__second-block__fifth-row_center-column main__second-block__fifth-row_right-column" "main__second-block__sixth-row_left-column main__second-block__sixth-row_center-column main__second-block__sixth-row_right-column" ". main__second-block__seventh-row_center-column main__second-block__seventh-row_right-column";
+  border-bottom: 50px solid;
+  border-image: url("../../images/border.png");
+  border-image-slice: 0 0 50 0;
 }
 
 .main__second-block_left-column {
@@ -220,6 +233,9 @@ header input[type=text] {
   grid-column-gap: 1.1rem;
   grid-row-gap: 2rem;
   grid-template-areas: "main__third-block_left-column main__third-block_center-column main__third-block_right-column" ". main__third-block__second-row_center-column main__third-block__second-row_right-column";
+  border-bottom: 50px solid;
+  border-image: url("../../images/border.png");
+  border-image-slice: 0 0 50 0;
 }
 
 .main__third-block_left-column {
@@ -245,7 +261,7 @@ header input[type=text] {
 .main__fourth-block_grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 35% 30%;
   grid-column-gap: 1.1rem;
   grid-template-areas: "main__fourth-block_left-column main__fourth-block_center-column main__fourth-block_right-column" ". main__fourth-block__second-row_center-column main__fourth-block__second-row_right-column";
 }
@@ -278,6 +294,39 @@ header input[type=text] {
   background-attachment: local;
 }
 
+.aktuell {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  overflow: hidden;
+  overflow-x: scroll;
+  padding: 1rem;
+}
+.aktuell div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.aktuell div div a {
+  font-size: 0.85rem;
+}
+.aktuell img {
+  width: 200px;
+  height: 150px;
+}
+
+.aktuell_top-panel {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 5px solid #e0e0e0;
+  font-weight: 700;
+  color: #253276;
+}
+
 .grid_footer {
   background-color: #253276;
   color: white;
@@ -302,6 +351,23 @@ main {
 
 h3 {
   color: #b5050e;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.buttons-block {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding-left: 0.5rem;
+}
+.buttons-block label {
+  width: 100%;
+  padding: 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+.buttons-block label:last-child {
+  border-bottom: 0px solid;
 }
 
 ._hidden {

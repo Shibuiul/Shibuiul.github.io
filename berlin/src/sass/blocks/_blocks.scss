@@ -16,4 +16,21 @@ main {
 }
 h3 {
 	color: #b5050e;
+	padding-bottom: 0.5rem;
+	padding-left: 0.5rem;
+}
+.buttons-block {
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	padding-left: 0.5rem;
+
+	label {
+	    width: 100%;
+	    padding: 0.5rem;
+	    border-bottom: 1px solid #e0e0e0;
+	}
+	label:last-child {
+	    border-bottom: 0px solid;
+	}
 }
