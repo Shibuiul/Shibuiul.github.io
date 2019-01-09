@@ -7,7 +7,7 @@ header input[type=text] {
 }
 
 .header__top {
-  border-top: 5px solid blue;
+  border-top: 5px solid #253276;
   padding: 1.3125rem 1.1875rem 0.875rem;
   background-color: #c7d9ff;
 }
@@ -19,6 +19,17 @@ header input[type=text] {
   right: 1.1875rem;
   padding: 0 1.1875rem 0 0.5rem;
   border-left: 1px solid blue;
+}
+.header__top .header__top__left-panel {
+  position: absolute;
+  left: 10rem;
+  top: 1.6rem;
+  font-size: 0.875rem;
+}
+.header__top .header__top__right-panel {
+  position: absolute;
+  right: 6rem;
+  top: 1.6rem;
 }
 
 .menu {
@@ -32,6 +43,7 @@ header input[type=text] {
   font-size: 0.875rem;
   font-family: arial;
   background-color: #f5f5f5;
+  box-shadow: 0 4px 3px -1px #eaeaea;
 }
 .menu label {
   padding: 1.5em;
@@ -44,6 +56,9 @@ header input[type=text] {
 }
 .menu label a {
   background-color: #f5f5f5;
+}
+.menu label .fa-bars {
+  font-size: 0.35rem;
 }
 
 .burger:checked ~ .menu__submenu {
@@ -82,8 +97,10 @@ header input[type=text] {
 
 .grid__main_mini {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 7fr 3fr;
   grid-template-rows: 50% 10% 40%;
+  grid-column-gap: 1.1rem;
+  grid-row-gap: 2rem;
   grid-template-areas: "images__block grid__main_mini__service-block" "aktuell_top-panel immobiliensuche" "aktuell immobiliensuche";
   border-bottom: 50px solid;
   border-image: url("../../images/border.png");
@@ -136,6 +153,12 @@ header input[type=text] {
 
 .main__first-block__second-row_center-column {
   grid-area: main__first-block__second-row_center-column;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+.main__first-block__second-row_center-column a {
+  width: 100%;
 }
 
 .main__first-block__second-row_right-column {
@@ -201,9 +224,15 @@ header input[type=text] {
 .main__second-block__fifth-row_center-column {
   grid-area: main__second-block__fifth-row_center-column;
 }
+.main__second-block__fifth-row_center-column div {
+  border-bottom: 1px solid #e0e0e0;
+}
 
 .main__second-block__fifth-row_right-column {
   grid-area: main__second-block__fifth-row_right-column;
+}
+.main__second-block__fifth-row_right-column div {
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .main__second-block__sixth-row_left-column {
@@ -224,6 +253,11 @@ header input[type=text] {
 
 .main__second-block__seventh-row_right-column {
   grid-area: main__second-block__seventh-row_right-column;
+}
+.main__second-block__seventh-row_right-column .fas, .main__second-block__seventh-row_right-column fa-angle-right {
+  font-size: 0.8rem;
+  position: relative;
+  left: 0;
 }
 
 .main__third-block_grid {
@@ -261,7 +295,7 @@ header input[type=text] {
 .main__fourth-block_grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 35% 30%;
+  grid-template-rows: 35% 35%;
   grid-column-gap: 1.1rem;
   grid-template-areas: "main__fourth-block_left-column main__fourth-block_center-column main__fourth-block_right-column" ". main__fourth-block__second-row_center-column main__fourth-block__second-row_right-column";
 }
@@ -327,12 +361,31 @@ header input[type=text] {
   color: #253276;
 }
 
+.immobiliensuche {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.main__second-block__seventh-row_right-column {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.main__second-block__seventh-row_right-column a {
+  width: 100%;
+  font-size: 0.9rem;
+}
+
 .grid_footer {
   background-color: #253276;
-  color: white;
+  color: #c9cdde;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-remplate-rows: 10% 10% 40% 40%;
+}
+.grid_footer a {
+  color: #c9cdde;
 }
 
 body {
@@ -360,6 +413,12 @@ h3 {
   flex-flow: row wrap;
   justify-content: flex-start;
   padding-left: 0.5rem;
+}
+.buttons-block .fas, .buttons-block .fa-angle-right {
+  position: relative;
+  left: 6rem;
+  font-size: 1.5rem;
+  color: #b5050e;
 }
 .buttons-block label {
   width: 100%;

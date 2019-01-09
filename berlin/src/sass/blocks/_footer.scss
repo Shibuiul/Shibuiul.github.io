@@ -1,7 +1,11 @@
 .grid_footer {
     background-color: #253276;
-    color: white;
+    color: #c9cdde;
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	grid-remplate-rows: 10% 10% 40% 40%;
+
+	a {
+	    color: #c9cdde;
+	}
 }

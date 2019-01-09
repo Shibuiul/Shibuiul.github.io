@@ -4,6 +4,7 @@
 
 <head>
 	<link rel="stylesheet" type="text/css" href="stylesheets/sass/main.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<meta charset="utf-8">
 	<title>Bearlean</title>
 </head>
@@ -12,13 +13,14 @@
 	<header>
 		<div class="header__top">
 		    <a class="logo" href="#"><img src="images/logo_berlin_de.png" width="130px" height="35px"></a>
-		    <span>Das offizielle Hauptstadtportal</span>
-		    <input type="text" name="search">
-		    <label>
-			    <span>&</span>
-		        <a href="#">Stadtplan</a>
-		    </label>
-			<a class="header__top__language-button" href="#">DE <span>&</span></a>
+		    <span class="header__top__left-panel">Das offizielle Hauptstadtportal</span>
+		    <div class="header__top__right-panel">
+		        <input type="text" name="search">
+		        <label>
+		            <a href="#"><i class="fas fa-map-marker-alt"></i>Stadtplan</a>
+		        </label>
+		    </div>
+			<a class="header__top__language-button" href="#">DE <span class="fas fa-angle-down"></span></a>
 		</div>
 		<div class="menu">
 			<label><a href="#">Politik, Verwaltung, Burger</a></label>
@@ -28,7 +30,7 @@
 			<label><a href="#">Lifestyle</a></label>
 			<label><a href="#">BerlinFinder</a></label>
 			<label for="burger">
-				<span>& </span>
+				<span class="fas fa-bars"></span>
 		    </label>
 		    <input type="checkbox" name="burger" id="burger">
 		    <div class="menu__submenu _hidden">
@@ -328,27 +330,27 @@
 					<input type="radio" name="grid__main__mini_chooser" id="service">
 					<div class="grid__main__mini__service_grid">
 						<div>
-						    <span>&</span>
+						    <i class="fas fa-map-marker-alt"></i><br>
 						    <span>Stadtplan</span>
 					    </div>
 					    <div>
-					    	<span>&</span>
+					    	<i class="fas fa-ambulance"></i><br>
 					    	<span>Not­dienste</span>
 					    </div>
 					    <div>
-					    	<span>&</span>
+					    	<i class="fas fa-university"></i><br>
 					    	<span>Service­-portal</span>
 					    </div>
 					    <div>
-					    	<span>&</span>
+					    	<i class="fas fa-bed"></i><br>
 					    	<span>Hotels</span>
 					    </div>
 					    <div>
-					    	<span>&</span>
+					    	<i class="fas fa-train"></i><br>
 					    	<span>Verkehr</span>
 					    </div>
 					    <div>
-					    	<span>&</span>
+					    	<i class="fas fa-cloud"></i><br>
 					    	<span>Wetter</span>
 					    </div>
 					</div>
@@ -429,7 +431,7 @@
 							<p>Michael Müller zum neuen Jahr. <a href="#">mehr</a></p>
 						</div>
 					</div>
-					<div>
+					<div class="Nachrichten">
 					    <a href="#">Nachrichten</a>
 						<div>
 							<a href="#">Kugeliges Eisbärenbaby übersteht Jahreswechsel gut</a>
@@ -489,9 +491,10 @@
 				    </div>
 				</div>
 				<div class="immobiliensuche">
-					<div>
+					<div class="immobiliensuche__top">
 					    <a href="#">Immobiliensuche</a>
 				    </div>
+				  <div class="immobiliensuche__second-row">
 				    <div>
 				        Objekttyp
 				    </div>
@@ -507,6 +510,7 @@
 				    <div>
 				    	<a href="#">Felder löschen</a>
 				    </div>
+				  </div>
 				</div>
 			</div>
 			<div class="main__first-block_grid">
@@ -515,31 +519,39 @@
 			    	<div class="buttons-block">
 			    	    <label>
 			    		    <a href="#">Pressemitteilungen</a>
+			    		    <span class="fas fa-angle-right"></span>
 			    	    </label>
 			    	    <label>
 			    		    <a href="#">Termine des Regierenden<br> Bürgermeisters</a>
+			    		    <span class="fas fa-angle-right"></span>
 			    	    </label>
 			    	    <label>
 			    	    	<a href="#">Rathaus Aktuell</a>
+			    	    	<span class="fas fa-angle-right"></span>
 			    	    </label>
 			    	    <label>
 			    	    	<a href="#">Verwaltung A-Z</a>
+			    	    	<span class="fas fa-angle-right"></span>
 			    	    </label>
 			    	    <label>
 			    	    	<a href="#">Dienstleistungen der Verwaltung</a>
+			    	    	<span class="fas fa-angle-right"></span>
 			    	    </label>
 			    	    <label>
 			    	    	<a href="#">Terminvereinbarung</a>
+			    	    	<span class="fas fa-angle-right"></span>
 			    	    </label>
 			    	    <label>
 			    	    	<a href="#">Bürgertelefon 115</a>
+			    	    	<span class="fas fa-angle-right"></span>
 			    	    </label>
 			    	    <label>
 			    	    	<a href="#">Bürgerbeteiligung</a>
+			    	    	<span class="fas fa-angle-right"></span>
 			    	    </label>
 			    	</div>
 			    </div>
-			    <div id="main__first-block_center-column">
+			    <div class="main__first-block_center-column">
 			    	<img src="images/main__first-block/center.jpg">
 			    	<a href="#">Mehr Sozialer Wohnungsbau</a>
 			    	<p>
@@ -547,7 +559,7 @@
 			    	    <a href="#">mehr »</a>
 			        </p>
 			    </div>
-			    <div id="main__first-block_right-column">
+			    <div class="main__first-block_right-column">
 			    	<div>
 			    	    <a href="#">Auf die Plätze, Kitas, los!</a>
 			    	    <p>
@@ -570,17 +582,17 @@
 			        	</p>
 			        </div>
 			    </div>
-			    <div id="main__first-block__second-row_center-column">
-			    	<a href="#">Richtlinien der Regierungspolitik</a>
-			    	<a href="#">Sicherheit - Präventions- und Sicherheitspaket des Senats</a>
-			    	<a href="#">Wissenschaft und Universitäten - Berlin als Wissenschaftsregion</a>
-			    	<a href="#">Forschung - Berliner Forschungslandschaft</a>
-			    	<a href="#">Regierender Bürgermeister Michael Müller - Reden, Filme, Interviews</a>
-			    	<a href="#">Fragen und Probleme - Bürgerberatung des Regierenden Bürgermeisters</a>
-			    	<a href="#">Landesregierung von Berlin - Senatorinnen und Senatoren</a>
-			    	<a href="#">NUR MIT EUCH - die Berliner Bundesratspräsidentschaft</a>
+			    <div class="main__first-block__second-row_center-column">
+			    	<a href="#"><span class="fas fa-angle-right"></span>Richtlinien der Regierungspolitik</a>
+			    	<a href="#"><span class="fas fa-angle-right"></span>Sicherheit - Präventions- und Sicherheitspaket des Senats</a>
+			    	<a href="#"><span class="fas fa-angle-right"></span>Wissenschaft und Universitäten - Berlin als Wissenschaftsregion</a>
+			    	<a href="#"><span class="fas fa-angle-right"></span>Forschung - Berliner Forschungslandschaft</a>
+			    	<a href="#"><span class="fas fa-angle-right"></span>Regierender Bürgermeister Michael Müller - Reden, Filme, Interviews</a>
+			    	<a href="#"><span class="fas fa-angle-right"></span>Fragen und Probleme - Bürgerberatung des Regierenden Bürgermeisters</a>
+			    	<a href="#"><span class="fas fa-angle-right"></span>Landesregierung von Berlin - Senatorinnen und Senatoren</a>
+			    	<a href="#"><span class="fas fa-angle-right"></span>NUR MIT EUCH - die Berliner Bundesratspräsidentschaft</a>
 			    </div>
-			    <div id="main__first-block__second-row_right-column">
+			    <div class="main__first-block__second-row_right-column">
 			    	<img src="images/main__first-block/second-row_right.png">
 			    	<a href="#">Ehrenamt: Berlin sagt Danke!</a>
 			    	<p>
@@ -595,24 +607,31 @@
 					<h3>Tourismus & Hotels</h3>
 					<label>
 						<a href="#">Hotels in Berlin</a>
+						<span class="fas fa-angle-right"></span>
 					</label>
 					<label>
 						<a href="#">Sehenswürdigkeiten</a>
+						<span class="fas fa-angle-right"></span>
 					</label>
 					<label>
 						<a href="#">Öffentlicher Nahverkehr</a>
+						<span class="fas fa-angle-right"></span>
 					</label>
 					<label>
 						<a href="#">Schiffstouren</a>
+						<span class="fas fa-angle-right"></span>
 					</label>
 					<label>
 						<a href="#">Stadtführungen</a>
+						<span class="fas fa-angle-right"></span>
 					</label>
 					<label>
 						<a href="#">Stadtrundfahrten</a>
+						<span class="fas fa-angle-right"></span>
 					</label>
 					<label>
 						<a href="#">Berlin Infos A-Z</a>
+						<span class="fas fa-angle-right"></span>
 					</label>
 				  </div>
 				</div>
@@ -650,24 +669,31 @@
 					<h3>Kultur & Ausgehen</h3>
 					<label>
 						<a href="#">Event-Highlights</a>
+						<span class="fas fa-angle-right"></span>
 					</label>
 					<label>
 						<a href="#">Museumsführer</a>
+						<span class="fas fa-angle-right"></span>
 					</label>
 					<label>
 						<a href="#">Ausstellungen</a>
+						<span class="fas fa-angle-right"></span>
 					</label>
 					<label>
 						<a href="#">Tickets</a>
+						<span class="fas fa-angle-right"></span>
 					</label>
 					<label>
 						<a href="#">Kinoprogramm</a>
+						<span class="fas fa-angle-right"></span>
 					</label>
 					<label>
 						<a href="#">Restaurant-Guide</a>
+						<span class="fas fa-angle-right"></span>
 					</label>
 					<label>
 						<a href="#">Clubs & Party</a>
+						<span class="fas fa-angle-right"></span>
 					</label>
 				  </div>
 				</div>
@@ -706,11 +732,11 @@
 				<div class="main__second-block__fifth-row_left-column">
 				  <div class="buttons-block">
 					<h3>Aktuelle Meldungen</h3>
-					<label><a href="#">Aktuelle Nachrichten</a></label>
-					<label><a href="#">Polizeiticker</a></label>
-					<label><a href="#">Baustellen und Sperrungen</a></label>
-					<label><a href="#">Störungen im Nahverkehr</a></label>
-					<label><a href="#">Wetter</a></label>
+					<label><a href="#">Aktuelle Nachrichten</a><span class="fas fa-angle-right"></span></label>
+					<label><a href="#">Polizeiticker</a><span class="fas fa-angle-right"></span></label>
+					<label><a href="#">Baustellen und Sperrungen</a><span class="fas fa-angle-right"></span></label>
+					<label><a href="#">Störungen im Nahverkehr</a><span class="fas fa-angle-right"></span></label>
+					<label><a href="#">Wetter</a><span class="fas fa-angle-right"></span></label>
 				  </div>
 				</div>
 				<div class="main__second-block__fifth-row_center-column">
@@ -772,13 +798,13 @@
 				<div class="main__second-block__sixth-row_left-column">
 				  <div class="buttons-block">
 				  	<h3>Lifestyle</h3>
-					<label><a href="#">Gesundheit & Beauty</a></label>
-					<label><a href="#">Immobilien & Wohnen</a></label>
-					<label><a href="#">Jobs & Ausbildung</a></label>
-					<label><a href="#">Finanzen & Recht</a></label>
-					<label><a href="#">Auto & Motor</a></label>
-					<label><a href="#">Computer & Handy</a></label>
-					<label><a href="#">Reisen & Ausflüge</a></label>
+					<label><a href="#">Gesundheit & Beauty</a><span class="fas fa-angle-right"></span></label>
+					<label><a href="#">Immobilien & Wohnen</a><span class="fas fa-angle-right"></span></label>
+					<label><a href="#">Jobs & Ausbildung</a><span class="fas fa-angle-right"></span></label>
+					<label><a href="#">Finanzen & Recht</a><span class="fas fa-angle-right"></span></label>
+					<label><a href="#">Auto & Motor</a><span class="fas fa-angle-right"></span></label>
+					<label><a href="#">Computer & Handy</a><span class="fas fa-angle-right"></span></label>
+					<label><a href="#">Reisen & Ausflüge</a><span class="fas fa-angle-right"></span></label>
 				  </div>
 				</div>
 				<div class="main__second-block__sixth-row_center-column">
@@ -805,13 +831,13 @@
 					</p>
 				</div>
 				<div class="main__second-block__seventh-row_right-column">
-					<a href="#">Oft gesucht</a>
-					<a href="#">Eventlocations</a>
-					<a href="#">Tickets</a>
-					<a href="#">WLAN</a>
-					<a href="#">Messekalender</a>
-					<a href="#">Umzug</a>
-					<a href="#">Jobs & Praktika bei berlin.de</a>
+					<a href="#"><span class="fas fa-angle-right"></span>Oft gesucht</a>
+					<a href="#"><span class="fas fa-angle-right"></span>Eventlocations</a>
+					<a href="#"><span class="fas fa-angle-right"></span>Tickets</a>
+					<a href="#"><span class="fas fa-angle-right"></span>WLAN</a>
+					<a href="#"><span class="fas fa-angle-right"></span>Messekalender</a>
+					<a href="#"><span class="fas fa-angle-right"></span>Umzug</a>
+					<a href="#"><span class="fas fa-angle-right"></span>Jobs & Praktika bei berlin.de</a>
 				</div>
 			</div>
 		    <div class="main__third-block_grid">
@@ -820,21 +846,27 @@
 		    		<h3>Wirtschaft</h3>
 		    		<label>
 		    			<a href="#">Wirtschaftsatlas Berlin</a>
+		    			<span class="fas fa-angle-right"></span>
 		    		</label>
 		    		<label>
 		    			<a href="#">Investieren</a>
+		    			<span class="fas fa-angle-right"></span>
 		    		</label>
 		    		<label>
 		    			<a href="#">Gewerbeimmobilien und –flächen</a>
+		    			<span class="fas fa-angle-right"></span>
 		    		</label>
 		    		<label>
 		    			<a href="#">Internationales</a>
+		    			<span class="fas fa-angle-right"></span>
 		    		</label>
 		    		<label>
 		    			<a href="#">Wirtschaftsstandort</a>
+		    			<span class="fas fa-angle-right"></span>
 		    		</label>
 		    		<label>
 		    			<a href="#">Messekalender</a>
+		    			<span class="fas fa-angle-right"></span>
 		    		</label>
 		    	  </div>		    		
 		    	</div>
@@ -875,13 +907,13 @@
 		    	<div class="main__fourth-block_left-column">
 		          <div class="buttons-block">
 		    		<h3>Shopping</h3>
-		    		<label><a href="#">Neueröffnungen</a></label>
-		    		<label><a href="#">Veranstaltungen</a></label>
-		    		<label><a href="#">Flohmärkte</a></label>
-		    		<label><a href="#">Einkaufscenter</a></label>
-		    		<label><a href="#">Einkaufsmeilen</a></label>
-		    		<label><a href="#">Sonntagsshopping</a></label>
-		    		<label><a href="#">Factory Outlets</a></label>
+		    		<label><a href="#">Neueröffnungen</a><span class="fas fa-angle-right"></span></label>
+		    		<label><a href="#">Veranstaltungen</a><span class="fas fa-angle-right"></span></label>
+		    		<label><a href="#">Flohmärkte</a><span class="fas fa-angle-right"></span></label>
+		    		<label><a href="#">Einkaufscenter</a><span class="fas fa-angle-right"></span></label>
+		    		<label><a href="#">Einkaufsmeilen</a><span class="fas fa-angle-right"></span></label>
+		    		<label><a href="#">Sonntagsshopping</a><span class="fas fa-angle-right"></span></label>
+		    		<label><a href="#">Factory Outlets</a><span class="fas fa-angle-right"></span></label>
 		    	  </div>
 		    	</div>
 		    	<div class="main__fourth-block_center-column">

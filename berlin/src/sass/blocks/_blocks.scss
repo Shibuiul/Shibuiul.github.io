@@ -25,6 +25,13 @@ h3 {
 	justify-content: flex-start;
 	padding-left: 0.5rem;
 
+	.fas, .fa-angle-right {
+	    position: relative;
+	    left: 6rem;
+	    font-size: 1.5rem;
+	    color: #b5050e;
+    }
+
 	label {
 	    width: 100%;
 	    padding: 0.5rem;
@@ -34,3 +41,4 @@ h3 {
 	    border-bottom: 0px solid;
 	}
 }
+
