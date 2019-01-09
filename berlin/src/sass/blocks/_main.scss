@@ -250,10 +250,6 @@
 
 
 
-
-
-
-
 .images_block {
     overflow-x: scroll;
 	background-image: url("../../images/image-block/1.jpg") , url("../../images/image-block/2.jpg") , url("../../images/image-block/3.jpg") ,
@@ -320,3 +316,134 @@
 }
 
 
+
+/* second page main */
+/* second page main */
+/* second page main */
+/* second page main */
+/* second page main */
+
+
+.Wall_grid {
+    padding-left: 1rem;
+    padding-bottom: 5rem;
+    font-size: 0.8rem;
+	display: grid;
+	grid-template-columns: 60% 40%;
+	grid-template-rows: auto;
+	grid-column-gap: 4.5rem;
+	grid-row-gap: 1rem;
+	grid-template-areas:
+	"Wall_grid__left-block Wall__grid__right-block"
+	"Wall__grid__left-block_bottom Wall__grid__right-block";
+
+	a {
+	    color: #003684;
+	}
+}
+.Wall__grid__left-block{
+    grid-area: Wall_grid__left-block;
+    display: flex;
+    flex-flow: row wrap;
+
+    div {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        width: 100%;
+
+            h4 {
+                padding-left: 0.5rem;
+            }
+
+            p {
+                align-self: center;
+            }
+        
+            img {
+                width: 200px;
+                height: 150px;
+            } 
+        }
+}
+.Wall__grid__left-block_bottom {
+	grid-area: Wall__grid__left-block_bottom;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+
+
+
+	div {
+	    width: 33%;
+	    img {
+	        width: 190px;
+	        height: 140px;
+	    }
+	}
+}
+.Wall__grid__right-block {
+    grid-area: Wall__grid__right-block;
+    position: relative;
+    right: 0;
+
+    div {
+        width: 300px;
+        padding: 2rem 0 0 0;
+    }
+
+    .buttons-block {
+        a {
+            padding-bottom: 1rem;
+            
+            span {
+                position: relative;
+                left: 0;
+                font-size: 0.9rem;
+                padding-right: 0.4rem;
+                color: #b5050e;
+            }
+        }
+    }
+
+    img {
+	width: 90px;
+	height: 60px;
+	}
+	.camo_block {
+	width: 300px;
+	height: 200px;
+    }
+}
+
+.Wall__grid__right-block__mini-photo-grid_bottom {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    overflow: hidden;
+    overflow-x: scroll;
+    padding: 1rem;
+
+    div {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 0.6rem 0 0.6rem;
+
+        img {
+            width: 140px;
+            height: 100px;
+        }
+    }	
+}
+
+.Wall_flex {
+
+    img {
+        float: left;
+        padding-right: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+}

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="DE">
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheets/sass/main.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<title>Wall</title>
+</head>
+<body>
+
+	<header>
+		<div class="header__top">
+		    <a class="logo" href="#"><img src="images/logo_berlin_de.png" width="130px" height="35px"></a>
+		    <span class="header__top__left-panel">Das offizielle Hauptstadtportal</span>
+		    <div class="header__top__right-panel">
+		        <input type="text" name="search">
+		        <label>
+		            <a href="#"><i class="fas fa-map-marker-alt"></i>Stadtplan</a>
+		        </label>
+		    </div>
+			<a class="header__top__language-button" href="#">DE <span class="fas fa-angle-down"></span></a>
+		</div>
+		<div class="menu">
+			<label><a href="#">Politik, Verwaltung, Burger</a></label>
+			<label><a href="#">Kultur & Ausgehen</a></label>
+			<label><a href="#">Tourismus</a></label>
+			<label><a href="#">Wirtschaft</a></label>
+			<label><a href="#">Lifestyle</a></label>
+			<label><a href="#">BerlinFinder</a></label>
+			<label for="burger">
+				<span class="fas fa-bars"></span>
+		    </label>
+		    <input type="checkbox" name="burger" id="burger">
+		    <div class="menu__submenu _hidden">
+		    	<div>
+		    		<label for="Politik">Politik, Verwaltung, Burger</label>
+		    		<input type="radio" name="submenu__left_chooser" id="Politik">
+		    		<div class="menu__submenu__Politik">
+		    			<div>
+		    				<div><label><a href="#">Zur Startseite: Politik, Verwaltung, Bürger</a></label></div>
+		    			    <div>
+		    				    <p><a href="#">Service</a></p>
+		    			        <a href="#">Bürgerämter</a>
+		    			        <a href="#">Terminvereinbarung</a>
+		    			        <a href="#">Online-Verfahren</a>
+		    			    </div>
+		    			 <div>
+		    				<p><a href="#">Presse & Newsletter</a></p>
+		    			    <a href="#">Aktuelle Mitteilungen</a>
+		    			    <a href="#">Newsletter abonnieren</a>
+		    			    <a href="#">Polizei-Meldungen</a>
+		    			 </div>
+		    			 <div>
+		    				<p><a href="#">Regierender Bürgermeister</a></p>
+		    			    <a href="#">Rathaus aktuell</a>
+		    			    <a href="#">Senat</a>
+		    			    <a href="#">Politik</a>
+		    			 </div>
+		    			 <div>
+		    				<p><a href="#">Karriere & Ausbildung</a></p>
+		    			    <a href="#">Aktuelle Stellenangebote</a>
+		    			    <a href="#">Berlin als Arbeitgeberin</a>
+		    			    <a href="#">Ausbildung</a>
+		    			 </div>
+		    			 <div>
+		    				<p><a href="#">Behörden</a></p>
+		    			    <a href="#">Senatsverwaltungen</a>
+		    			    <a href="#">Bezirksämter</a>
+		    			    <a href="#">Finanzämter</a>
+		    			 </div>
+		    			 <div>
+		    				<p><a href="#">Oft gesucht</a></p>
+		    			    <a href="#">Volkshochschulen</a>
+		    			    <a href="#">Bibliotheken</a>
+		    			    <a href="#">Jobcenter</a>
+		    			 </div>
+		    			</div>
+		    			<div></div>
+		    		</div>
+		    	</div>
+		    	<div>
+		    		<label for="Kultur">Kultur & Ausgehen</label>
+		    		<input type="radio" name="submenu__left_chooser" id="Kultur">
+		    		<div class="menu__submenu__Kultur _hidden">
+		    			<div><label><a href="#">Zur Startseite: Kultur & Ausgehen</a></label></div>
+		    			<div>
+		    				<p><a href="#">Tickets</a></p>
+		    				<a href="#">Musical</a>
+		    				<a href="#">Theater</a>
+		    				<a href="#">Konzert-Highlights</a>
+		    				<a href="#">Comedy</a>
+		    			</div>
+		    			<div>
+		    				<p><a href="#">Essen & Trinken</a></p>
+		    				<a href="#">Restaurants</a>
+		    				<a href="#">Bars</a>
+		    				<a href="#">Cafés</a>
+		    				<a href="#">Neueröffnungen</a>
+		    			</div>
+		    			<div>
+		    				<p><a href="#">Adressen</a></p>
+		    				<a href="#">Museen</a>
+		    				<a href="#">Kinos</a>
+		    				<a href="#">Galerien</a>
+		    				<a href="#">Theaterbühnen</a>
+		    			</div>
+		    			<div>
+		    				<p><a href="#">Termine</a></p>
+		    				<a href="#">Kinoprogramm</a>
+		    				<a href="#">Ausstellungen</a>
+		    				<a href="#">Eventvorschau</a>
+		    				<a href="#">Street Food Markets</a>
+		    			</div>
+		    			<div>
+		    				<p><a href="#">Tipps</a></p>
+		    				<a href="#">Museumsführer</a>
+		    				<a href="#">Wochenende</a>
+		    				<a href="#">Clubs & Party</a>
+		    				<a href="#">Dinner-Shows</a>
+		    			</div>
+		    			<div>
+		    				<p><a href="#">Weitere Angebote</a></p>
+		    				<a href="#">Fotostrecken</a>
+		    				<a href="#">Kultur-Nachrichten</a>
+		    				<a href="#">Gratis</a>
+		    				<a href="#">Highlights 2019</a>
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<div>
+		    		<label for="Tourismus">Tourismus</label>
+		    		<input type="radio" name="submenu__left_chooser" id="Tourismus">
+		    		<div class="menu__submenu__Tourismus _hidden">
+		    			<div><label><a href="#">Zur Startseite: Tourismus</a></label></div>
+		    			<div>
+		    				<p><a href="#">Sightseeing</a></p>
+		    				<a href="#">Sehenswürdigkeiten</a>
+		    				<a href="#">Aussichtspunkte</a>
+		    				<a href="#">Parks & Gärten</a>
+		    				<a href="#">Potsdam</a>
+		    			</div>
+		    			<div>
+		    				<p><a href="#">Touren</a></p>
+		    				<a href="#">Schiffstouren</a>
+		    				<a href="#">Stadtrundfahrten</a>
+		    				<a href="#">Stadtführungen</a>
+		    				<a href="#">Rundflüge</a>
+		    			</div>
+		    			<div>
+		    				<p><a href="#">Mobilität & Verkehr</a></p>
+		    				<a href="#">Fahrkarten & Pläne</a>
+		    				<a href="#">Routenplaner</a>
+		    				<a href="#">Verkehrslage</a>
+		    				<a href="#">Störungen</a>
+		    			</div>
+		    			<div>
+		    				<p><a href="#">Hotels & Unterkünfte</a></p>
+		    				<a href="#">Hotels</a>
+		    				<a href="#">Hostels</a>
+		    				<a href="#">Themenhotels</a>
+		    				<a href="#">Hotels & Bahn</a>
+		    			</div>
+		    			<div>
+		    				<p><a href="#">Insider-Tipps</a></p>
+		    				<a href="#">Für Abenteurer</a>
+		    				<a href="#">Für Foodies</a>
+		    				<a href="#">Für Romantiker</a>
+		    				<a href="#">Mit Eltern</a>
+		    			</div>
+		    			<div>
+		    				<p><a href="#">Weitere Angebote</a></p>
+		    				<a href="#">Ausstellungen</a>
+		    				<a href="#">Museen</a>
+		    				<a href="#">Zoos & Tierparks</a>
+		    				<a href="#">Klassenfahrten</a>
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<div>
+		    		<label for="Wirtschaft">Wirtschaft</label>
+		    		<input type="radio" name="submenu__left_chooser" id="Wirtschaft">
+		    		<div class="menu__submenu__Wirtschaft _hidden">
+		    			<label><a href="#">Zur Startseite: Wirtschaft</a></label>
+		    			<div>
+		    				<p><a href="#">Wirtschaftsstandort</a></p>
+		    				<a href="#">Wirtschaftswachstum</a>
+		    				<a href="#">Brancheninformationen</a>
+		    				<a href="#">Messekalender</a>
+		    			</div>
+		    			<div>
+		    				<p><a href="#">Investieren</a></p>
+		    				<a href="#">Finanzierung & Förderung</a>
+		    				<a href="#">Fachkräfte</a>
+		    				<a href="#">Standortsuche</a>
+		    			</div>
+		    			<div>
+		    				<p><a href="#">Wirtschaftsförderung</a></p>
+		    				<a href="#">Für Investoren und Unternehmen</a>
+		    				<a href="#">Für Startups und Gründer</a>
+		    				<a href="#">Internationalisierung</a>
+		    			</div>
+		    			<div>
+		    				<p><a href="#">Gründen</a></p>
+		    				<a href="#">Beratung und Förderung</a>
+		    				<a href="#">Standort</a>
+		    				<a href="#">Start-up Interviews</a>
+		    			</div>
+		    			<div>
+		    				<p><a href="#">Wissenschaft & Innovation</a></p>
+		    				<a href="#">Wissenschaftsstandort</a>
+		    				<a href="#">Innovationsförderung</a>
+		    				<a href="#">Technologieparks</a>
+		    			</div>
+		    			<div>
+		    				<p><a href="#">Service</a></p>
+		    				<a href="#">Ansprechpartner</a>
+		    				<a href="#">Nachrichten</a>
+		    				<a href="#">Eventagenturen</a>
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<div>
+		    		<label for="Lifestyle">Lifestyle</label>
+		    		<input type="radio" name="submenu__left_chooser" id="Lifestyle">
+		    	    <div class="menu__submenu__Lifestyle _hidden">
+		    	    	<label><a href="#">Zur Startseite: Lifestyle</a></label>
+		    	    	<div>
+		    	    		<p><a href="#">Shopping</a></p>
+		    	    		<a href="#">Einkaufscenter</a>
+		    	    		<a href="#">Einkaufsmeilen</a>
+		    	    		<a href="#">Flohmärkte</a>
+		    	    		<a href="#">Best of Berlin</a>
+		    	    	</div>
+		    	    	<div>
+		    	    		<p><a href="#">Immobilien & Wohnen</a></p>
+		    	    		<a href="#">Immobiliensuche</a>
+		    	    		<a href="#">Mietrecht & Urteile</a>
+		    	    		<a href="#">Möbel & Design</a>
+		    	    		<a href="#">Haushaltstipps</a>
+		    	    	</div>
+		    	    	<div>
+		    	    		<p><a href="#">Reisen & Ausflüge</a></p>
+		    	    		<a href="#">Brandenburg</a>
+		    	    		<a href="#">Ostsee</a>
+		    	    		<a href="#">Städtereisen</a>
+		    	    		<a href="#">Reiserecht</a>
+		    	    	</div>
+		    	    	<div>
+		    	    		<p><a href="#">Gesundheit & Beauty</a></p>
+		    	    		<a href="#">Gesundheitslexikon</a>
+		    	    		<a href="#">Ernährung</a>
+		    	    		<a href="#">Rezepte</a>
+		    	    		<a href="#">Beauty & Kosmetik</a>
+		    	    	</div>
+		    	    	<div>
+		    	    		<p><a href="#">Jobs & Ausbildung</a></p>
+		    	    		<a href="#">Stellenmarkt</a>
+		    	    		<a href="#">Karrieretipps</a>
+		    	    		<a href="#">Arbeitsrecht</a>
+		    	    		<a href="#">Uni & Studium</a>
+		    	    	</div>
+		    	    	<div>
+		    	    		<p><a href="#">Weitere Themen</a></p>
+		    	    		<a href="#">Auto & Motor</a>
+		    	    		<a href="#">Finanzen & Recht</a>
+		    	    		<a href="#">Computer & Handy</a>
+		    	    		<a href="#">Liebe & Partnerschaft</a>
+		    	    	</div>
+		    	    </div>
+		    	</div>
+		    	<div>
+		    		<label for="BerlinFinder">BerlinFinder</label>
+		    		<input type="radio" name="submenu__left_chooser" id="BerlinFinder">
+		    		<div class="menu__submenu__BerlinFinder _hidden">
+		    			<label><a href="#">Zur Startseite: BerlinFinder</a></label>
+		    			<div>
+		    				<p><a href="#">Finanzen & Recht</a></p>
+		    				<a href="#">Rechtsanwälte</a>
+		    				<a href="#">Steuerberater</a>
+		    				<a href="#">Versicherungen</a>
+		    			</div>
+		    			<div>
+		    				<p><a href="#">Gesundheit & Beauty</a></p>
+		    				<a href="#">Zahnärzte</a>
+		    				<a href="#">Friseure</a>
+		    				<a href="#">Wellness</a>
+		    			</div>
+		    			<div>
+		    				<p><a href="#">Shopping</a></p>
+		    				<a href="#">Schuhgeschäfte</a>
+		    				<a href="#">Second-Hand</a>
+		    				<a href="#">Mode</a>
+		    			</div>
+		    			<div>
+		    				<p><a href="#">Jobs & Ausbildung</a></p>
+		    				<a href="#">Bildungseinrichtungen</a>
+		    				<a href="#">Grundschulen</a>
+		    				<a href="#">Privatschulen</a>
+		    			</div>
+		    			<div>
+		    				<p><a href="#">Immobilien & Wohnen</a></p>
+		    				<a href="#">Hausverwaltungen</a>
+		    				<a href="#">Immobilien</a>
+		    				<a href="#">Immobilienmakler</a>
+		    			</div>
+		    			<div>
+		    				<p><a href="#">Weitere Adressen</a></p>
+		    				<a href="#">Hotels</a>
+		    				<a href="#">Restaurants</a>
+		    				<a href="#">Sport & Freizeit</a>
+		    			</div>
+		    			<label><a href="#">Berliner Behörden finden Sie hier</a></label>
+		    		</div>
+		    	</div>
+		    </div>
+		</div>
+	</header>
+
+
+	<main>
+		<div class="Wall_grid">
+			
+		 <div class="Wall__grid__left-block">
+		 	<div>
+				<h2>Musical- und Showtheater</h2>
+				<p>Musicals sind eine Form des Musiktheaters, die Schauspiel, Musik, Gesang und Tanz miteinander verbindet. Die Shows sind meist aufwendig ausgestattet und bedienen in ihrer Handlung eine Vielzahl von Genres.</p>
+			</div>
+			<div>
+				<div>
+				    <img src="images/Wall__grid__left-block/1.jpg">
+			    </div>
+				<div>
+				<h4>Bluemax Theater</h4>
+				<p>Mit dem Bluemax Theater haben die blauen Männer seit Februar 2007 ihr eigenes, gleichwohl kleineres Theater, die Show ist trotzdem außergewöhnlich.
+					<a href="#">mehr »</a></p>
+				</div>
+			</div>
+			<div>
+				<img src="images/Wall__grid__left-block/2.jpg">
+				<h4>Friedrichstadt-Palast</h4>
+				<p>Europas größtes Revue-Theater ist ein Wunderwerk der Technik und bietet viel Raum für lange Beine.
+					<a href="#">mehr »</a></p>
+			</div>
+			<div>
+				<img src="images/Wall__grid__left-block/3.jpg">
+				<h4>Kabarett-Theater "Die Stachelschweine"</h4>
+				<p>Immer ein Garant für einen gelungenen Abend: Humorvolle Unterhaltung mit Köpfchen im charmanten Theater direkt an der Gedächtniskirche…
+					<a href="#">mehr »</a></p>
+			</div>
+			<div>
+				<img src="images/Wall__grid__left-block/4.jpg">
+				<h4>Theater am Potsdamer Platz</h4>
+				<p>Das Theater am Potsdamer Platz ist ein Musicaltheater im Herzen der Stadt.
+					<a href="#">mehr »</a></p>
+			</div>
+			<div>
+				<img src="images/Wall__grid__left-block/5.jpg">
+				<h4>Theater des Westens</h4>
+				<p>Bewährte Musicalware und eine bewegte Vergangenheit: Berlins ältestes Musicaltheater zeigt sich unerschütterlich
+					<a href="#">mehr »</a></p>
+			</div>
+			<div>
+				<img src="images/Wall__grid__left-block/6.jpg">
+				<h4>Musicals & Shows: Die Berliner Highlights</h4>
+				<p>Erleben Sie die beliebtesten Shows Berlins Tanz der Vampire und Blue Man Group live in der Hauptstadt!
+					<a href="#">mehr »</a></p>
+			</div>
+			<div>
+				<img src="images/Wall__grid__left-block/7.jpg">
+				<h4>Tipp: Dinner-Theater und Shows</h4>
+				<p>Gute Unterhaltung bei gutem Essen: Erleben Sie spannende Krimidinner, klassisches Dinnertheater aufregende Dinnershows.
+					<a href="#">mehr »</a></p>
+			</div>
+			<div>
+				<img src="images/Wall__grid__left-block/8.jpg">
+				<h4>Musical & Show</h4>
+				<p>Tickets zu weiteren musikalischen Highlights finden Sie hier
+					<a href="#">mehr »</a></p>
+			</div>
+			<div>
+				<img src="images/Wall__grid__left-block/9.jpg">
+				<h4>Bühnen: Freie Theater</h4>
+				<p>Neben Musik-, Kabarett- und Kindertheatern haben sich auch einige Freie Theater in Berlin etabliert.
+					<a href="#">mehr »</a></p>
+			</div>
+			<div>
+				<img src="images/Wall__grid__left-block/10.jpg">
+				<h4>Events & Festivals 2019</h4>
+				<p>Kulturprogramm für Berlin: Events, Feste, Festivals und große Open-Air-Veranstaltungen in Berlin.
+					<a href="#">mehr »</a></p>
+			</div>
+		 </div>
+		    <div class="Wall__grid__left-block_bottom">
+		      <div>
+		    	<img src="images/Wall__grid__left-block_bottom/1.jpg">
+		    	<h4>Westend</h4>
+		    	<p>Bilder der Fotoprobe für das Stück «Westend» im Deutschen Theater am 18. Dezember 2018.
+		    		<a href="#">mehr »</a></p>
+		      </div>
+		      <div>
+		    	<img src="images/Wall__grid__left-block_bottom/2.jpg">
+		    	<h4>Haußmanns Staatssicherheitstheater</h4>
+		    	<p>Bilder der Fotoprobe des Theaterstücks «Haußmanns Staatssicherheitstheater» von Leander Haußmann an der Volksbühne in Berlin.
+		    		<a href="#">mehr »</a></p>
+		      </div>
+		      <div>
+		    	<img src="images/Wall__grid__left-block_bottom/3.jpg">
+		    	<h4>Der Zauberer von Oz</h4>
+		    	<p>Bilder der Fotoprobe der Kinderoper "Der Zauberer von Oz" in einer Inszenierung von F. Seiler in der Komischen Oper Berlin.
+		    		<a href="#">mehr »</a></p>
+		      </div>
+		      <div>
+		    	<img src="images/Wall__grid__left-block_bottom/4.jpg">
+		    	<h4>Premiere: Vivid</h4>
+		    	<p>Zahlreiche Politiker und Prominente kamen am 11. Oktober 2018 zur Premiere von «Vivid», der neuen Grand Show im Friedrichstadt-Palast.
+		    		<a href="#">mehr »</a></p>
+		      </div>
+		      <div>
+		    	<img src="images/Wall__grid__left-block_bottom/5.jpg">
+		    	<h4>Usher</h4>
+		    	<p>Bilder der Fotoprobe zur Uraufführung von Usher von Claude Debussy und Annelies Van Parys in der Inszenierung von Philippe Quesne in der Staatsoper Unter den Linden.
+		    		<a href="#">mehr »</a></p>
+		      </div>
+		      <div>
+		    	<img src="images/Wall__grid__left-block_bottom/6.jpg">
+		    	<h4>Probe: Vivid Grand Show</h4>
+		    	<p>Bilder der Probe zur neuen Show "Vivid" im Berliner Friedrichstadt-Palast. Die Revue feiert am 11. Oktober 2018 Premiere.
+		    		<a href="#">mehr »</a></p>
+		      </div>
+		    </div>
+		    <div class="Wall__grid__right-block">
+		    	<div>
+		    		<img class="camo_block" src="images/Wall__grid__right-block/camo_block.png">
+		    	</div>
+		    	<div class="Wall_flex">
+		    		<img src="images/Wall__grid__right-block/1.jpg">
+		    		<p>Konzert Highlights</p>
+		    		<p>Termine, Informationen und Vorverkauf von Eintrittskarten für die Konzert-Highlights in Berlin.
+		    			<a href="#">mehr »</a></p>
+		    	</div>
+		    	<div class="Wall_flex">
+		    		<img src="images/Wall__grid__right-block/2.jpg">
+		    		<p>Ausstellungen in Berlin</p>
+		    		<p>Übersicht der in Berlin stattfindenden Ausstellungen in Berliner Museen und Galerien.
+		    			<a href="#">mehr »</a></p>
+		    	</div>
+		    	<div class="Wall_flex">
+		    		<img src="images/Wall__grid__right-block/3.jpg">
+		    		<p>Das Touristenticket</p>
+		    		<p>Berlin erleben und sparen mit der Berlin WelcomeCard! Freie Fahrt mit allen öffentlichen Verkehrsmitteln & Rabatte bis 50% bei den Highlights.
+		    			<a href="#">mehr »</a></p>
+		    	</div>
+		    	<div class="Wall__grid__right-block_mini-photo-grid">
+		    		<div class="Wall__grid__right-block__mini-photo-grid_top"><a href="#">Aktuelle Fotostrecken</a></div>
+		    		<div class="Wall__grid__right-block__mini-photo-grid_bottom">
+		    			<div>
+		    				<img src="images/Wall__grid__right-block__mini-photo-grid_bottom/1.jpg">
+		    				<p>Westend</p>
+		    			</div>
+		    			<div>
+		    				<img src="images/Wall__grid__right-block__mini-photo-grid_bottom/2.jpg">
+		    				<p>Haußmanns Staatssicherheitstheater</p>
+		    			</div>
+		    			<div>
+		    				<img src="images/Wall__grid__right-block__mini-photo-grid_bottom/3.jpg">
+		    				<p>Toten Hosen</p>
+		    			</div>
+		    			<div>
+		    				<img src="images/Wall__grid__right-block__mini-photo-grid_bottom/4.jpg">
+		    				<p>Der Zauberer von Oz</p>
+		    			</div>
+		    			<div>
+		    				<img src="images/Wall__grid__right-block__mini-photo-grid_bottom/5.jpg">
+		    				<p>Premiere: Vivid</p>
+		    			</div>
+		    			<div>
+		    				<img src="images/Wall__grid__right-block__mini-photo-grid_bottom/6.jpg">
+		    				<p>Usher</p>
+		    			</div>
+		    			<div>
+		    				<img src="images/Wall__grid__right-block__mini-photo-grid_bottom/7.jpg">
+		    				<p>Probe: Vivid Grand Show</p>
+		    			</div>
+		    			<div>
+		    				<img src="images/Wall__grid__right-block__mini-photo-grid_bottom/8.jpg">
+		    				<p>Willkommen bei den Hartmanns</p>
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<div class="buttons-block">
+		    		<h3><a href="#">Aktuelle Kultur-Nachrichten</a></h3>
+		    		<a href="#"><span class="fas fa-angle-right"></span>Wosz, Mattuschka, Schneider und Nedved zaubern in Berlin</a>
+		    		<a href="#"><span class="fas fa-angle-right"></span>Berlin: 300 archäologische Exponate aus MV bei großer Schau</a>
+		    		<a href="#"><span class="fas fa-angle-right"></span>Manuskripte aus Fontane-Nachlass restauriert: mehrere Romane</a>
+		    		<a href="#"><span class="fas fa-angle-right"></span>Reger Zulauf zu Cross im Barberini: Bald kommt Picasso</a>
+		    		<a href="#"><span class="fas fa-angle-right"></span>Handball-WM: 93 Prozent der Karten für Berlin verkauft</a>
+		    	</div>
+		    	<div class="Wall_flex">
+		    		<img src="images/Wall__grid__right-block/4.jpg">
+		    		<p>Wahnsinn! Das Musical mit den Hits von Wolfgang Petry</p>
+		    		<p>Das Gute-Laune-Musical mit einer stattlichen Portion Romantik
+		    			<a href="#">mehr »</a></p>
+		    	</div>
+		    	<div class="Wall_flex">
+		    		<img src="images/Wall__grid__right-block/5.jpg">
+		    		<p>Tipp: Wundertüte für Events</p>
+		    		<p>Die «Helmut Surprise» ist das perfekte Geschenk für Musik- und Kulturliebhaber und alle, die neue Orte
+		    			<a href="#">mehr »</a></p>
+		    	</div>
+		    	<div class="buttons-block">
+		    		<h3><a href="#">Gratis Kultur in Berlin erleben</a></h3>
+		    		<a href="#"><span class="fas fa-angle-right"></span>Bau1haus</a>
+		    		<a href="#"><span class="fas fa-angle-right"></span>Geschichten in Jurten</a>
+		    		<a href="#"><span class="fas fa-angle-right"></span>Totale Mondfinsternis 2019 in Berlin</a>
+		    		<a href="#"><span class="fas fa-angle-right"></span>Unseen Westeros</a>
+		    		<a href="#"><span class="fas fa-angle-right"></span>Miklòs Dèri: Acht</a>
+		    	</div>
+		    	<div class="Wall_flex">
+		    		<img src="images/Wall__grid__right-block/6.jpg">
+		    		<p>Restaurants in Berlin</p>
+		    		<p>Mehr als 5000 Restaurants, Cafés und Bars im Berlin.de- Restaurantführer
+		    			<a href="#">mehr »</a></p>
+		    	</div>
+		    	<div class="Wall_flex">
+		    		<img src="images/Wall__grid__right-block/7.jpg">
+		    		<p>Newsletter: Die Berliner Wochenend-Tipps</p>
+		    		<p>Tipps für das Wochenende, ausgewählt von der Berlin.de-Redaktion.
+		    			<a href="#">mehr »</a></p>
+		    	</div>
+		    	<div class="Wall_flex">
+		    		<img src="images/Wall__grid__right-block/8.jpg">
+		    		<p>Hertha, Alba, Eisbären und Co.</p>
+		    		<p>Erstklassigen Sport in Berlin erleben. Jetzt Tickets sichern!
+		    			<a href="#">mehr »</a></p>
+		    	</div>
+		    	<div class="Wall_flex">
+		    		<img src="images/Wall__grid__right-block/9.jpg">
+		    		<p>Clubs & Party in Berlin</p>
+		    		<p>Clubs in Berlin: Clubguide für Berlin mit Beschreibungen, Adressen und Fotostrecken zu den interessantesten 
+		    			<a href="#">mehr »</a></p>
+		    	</div>
+		    	<div class="buttons-block">
+		    		<h3>Empfehlungen</h3>
+		    		<a href="#"><span class="fas fa-angle-right"></span>Shadowland – Das Original kehrt zurück</a>
+		    		<a href="#"><span class="fas fa-angle-right"></span>Vivid Grand Show im Friedrichstadt-Palast</a>
+		    		<a href="#"><span class="fas fa-angle-right"></span>Kolja Kleeberg & Hans-Peter Wodarz Palazzo</a>
+		    		<a href="#"><span class="fas fa-angle-right"></span>Rendezvous. Französische Meisterzeichnungen</a>
+		    		<a href="#"><span class="fas fa-angle-right"></span>Die Mauer – das asisi Panorama zum geteilten Berlin</a>
+		    		<a href="#"><span class="fas fa-angle-right"></span>Circa’s Peepshow – Neuer Zirkus im Chamäleon</a>
+		    		<a href="#"><span class="fas fa-angle-right"></span>Private Tour: Reichstag inklusive Reichstagskuppel</a>
+		    		<a href="#"><span class="fas fa-angle-right"></span>Stadtführung Reichstag inklusive Reichstagskuppel</a>
+		    		<a href="#"><span class="fas fa-angle-right"></span>Tickets: Staunen - Circus of Stars</a>
+		    		<a href="#"><span class="fas fa-angle-right"></span>Hotels buchen auf Berlin.de - schnell und bequem!</a>
+		    	</div>
+		    </div>
+		    <div class="f_go-back"><label><a href="index.html"><br><br><br><br>Quack, goback<br>monkaS</a></div>
+	</main>
+
+    <footer>
+		<div class="grid_footer">
+			<div class="grid_footer_top">
+			    <label class="footer__link_to-top"><a href="#header">Zum Seitenanfang</a></label>
+		        <div><img class="logo" src="images/logo_berlin_de_neg.png" width="120" height="40" alt="logo"></div>
+		        <div><input type="text" name="search"></div>
+		    </div>
+		    <div class="grid_footer_left">
+			    <span>Berlin.de Newsletter</span>
+			    <p>Die Tipps für das Wochenende und für den kommenden Monat, ausgewählt von der Berlin.de-Redaktion. Kostenlos direkt in Ihr Postfach.</p>
+			    <a class="button" href="#" target="blank">Newsletter bestellen</a>
+		    </div>
+		<div class="grid_footer_right">
+		    <div class="grid_footer__right_left flex">
+		    	<p>Suche</p>
+		    	<a href="#">Tickets & Events</a>
+		    	<a href="#">Jobs</a>
+		    	<a href="#">Immobilien</a>
+		    	<a href="#">Unternehmen und Dienstleister</a>
+		    	<a href="#">Eventlocations</a>
+		    	<a href="#">Silvesterpartys</a>
+		    </div>
+		    <div class="grid_footer__right_center flex">
+		    	<p>Über uns</p>
+		    	<a href="#">Kontakt</a>
+		    	<a href="#">AGB</a>
+		    	<a href="#">Impressum</a>
+		    	<a href="#">Datenschutz</a>
+		    	<a href="#">Werben auf Berlin.de</a>
+		    </div>
+		    <div class="grid_footer__right_right flex">
+		    	<p>Politik & Verwaltung</p>
+		    	<a href="#">Service-Portal</a>
+		    	<a href="#">Bürgertelefon 115</a>
+		    	<a href="#">Terminvereinbarung</a>
+		    	<a href="#">Bürgerämter</a>
+		    	<a href="#">Aktuelle Landespolitik</a>
+		    	<a href="#">Karriere beim Land Berlin</a>
+		    </div>
+		    <div class="grid_footer__right__second-row_left flex">
+		    	<p>Berlin Top 10</p>
+		    	<a href="#">Tickets</a>
+		    	<a href="#">Stadtführungen</a>
+		    	<a href="#">Museen</a>
+		    	<a href="#">Sehenswürdigkeiten</a>
+		    	<a href="#">Stadtrundfahrten</a>
+		    </div>
+		    <div class="grid_footer__right__second-row_center flex">
+		    	<p>Extra</p>
+		    	<a href="#">Berlin.de-Mail</a>
+		    	<a href="#">Gutscheine</a>
+		    	<a href="#">Gewinnspiele</a>
+		    	<a href="#">Gratis</a>
+		    </div>
+		    <div class="grid_footer__right__second-row_right flex">
+		    	<p>In anderen Sprachen</p>
+		    	<a href="#">English</a>
+		    	<a href="#">Français</a>
+		    	<a href="#">Italiano</a>
+		    </div>
+		</div>
+	    </div>
+	</footer>
+
+</body>
+</html>
