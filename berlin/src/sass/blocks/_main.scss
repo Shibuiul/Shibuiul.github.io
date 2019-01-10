@@ -47,6 +47,12 @@
 
 .images__block {
 	grid-area: images__block;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	overflow: hidden;
+	overflow-x: scroll;
 }
 .grid__main_mini__service-block {
 	grid-area: grid__main_mini__service-block;
@@ -248,17 +254,6 @@
 	grid-area: main__fourth-block__second-row_right-column;
 }
 
-
-
-.images_block {
-    overflow-x: scroll;
-	background-image: url("../../images/image-block/1.jpg") , url("../../images/image-block/2.jpg") , url("../../images/image-block/3.jpg") ,
-	 url("../../images/image-block/4.jpg") , url("../../images/image-block/5.jpg") , url("../../images/image-block/6.jpg") ,
-	 url("../../images/image-block/7.jpg") , url("../../images/image-block/8.jpg") ;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: local;
-}
 
 .aktuell {
     display: flex;
