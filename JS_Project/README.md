@@ -1,1 +1,1 @@
-[js project](https://shibuiul.github.io/JS_Project/public/)
+[js_project](https://shibuiul.github.io/JS_Project/public/)
