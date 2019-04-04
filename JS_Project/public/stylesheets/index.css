@@ -2,6 +2,7 @@ body {
 	background-color: #555;
 	text-align: center;
 }
-iframe {
-	margin-top: 55px;
+#map {
+  height: 425px;
+  margin-top: 25px;
 }
