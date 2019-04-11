@@ -1,20 +1,21 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Icarus project</title>
-	<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+    <title>Icarus Project</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
 </head>
-
 <body>
-	
-<div id="floating-panel">
-  <input id="address" type="textbox" value="">
-  <input id="submit" type="button" value="найти">
-</div>
-<div id="map"></div>
-<script type="text/javascript" src="../src/index.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCdNC3xVQURZe4LS3iosaJOKU6h11NcTg&callback=initMap"></script>
 
+<input id="place" type="text" name="place">
+<input id="find" type="button" name="find" value="найти на карте">
+
+<div id="map"></div>
+
+
+<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
+<script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=002ef74e-4c00-4b69-b734-7bd399dcd828" type="text/javascript"></script>
+<script defer type="text/javascript" src="../src/index.js"></script>
 </body>
 
 </html>
