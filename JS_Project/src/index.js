@@ -7,10 +7,11 @@ $( document ).ready(function() {
         }, {
             searchControlProvider: 'yandex#search'
         });
+    $('#find').click(function(e){
+myMap.center = '[' + $('#place').innerText + ']';
+});
 });
 
-$('#find').addEventListener('click', function(e){
-myMap.center = $('#place').innerText;
-});
+
 
 });
