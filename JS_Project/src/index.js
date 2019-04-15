@@ -16,7 +16,8 @@ $( document ).ready(function() {
 
 			     var location = res.geoObjects.get(0).geometry._coordinates;
 			     myMap.center = location;
-			     myMap.setBounds(location);
+			     myMap.setBounds([[location[0]], [location[1]]]);
+			     
 			}, function (err) {
 			    // Обработка ошибки.
 			});
