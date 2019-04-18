@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-	ymaps.ready(function () {
+	ymaps.ready(function() {
 	    var myMap = new ymaps.Map('map', {
 	            center: [55.751574, 37.573856],
 	            zoom: 9,
@@ -9,18 +9,33 @@ $( document ).ready(function() {
 	        });
 
 
-	    $('#find').click(function(e){
+	    $('#find').click(function(){
 			var myGeocoder = ymaps.geocode($('#place').val());
 			myGeocoder.then(function (res) {
 			    myMap.geoObjects.add(res.geoObjects);
 
-			     var location = res.geoObjects.get(0).geometry._coordinates;
-			     myMap.center = location;
-			     myMap.setBounds([[location[0]], [location[1]]]);
+			    var location = res.geoObjects.get(0).geometry._coordinates;
+			    myMap.setCenter(location);
 			     
+			     storedLocations = JSON.parse(localStorage.getItem('location'));
+
+			     if (!storedLocations) {
+			     	localStorage.setItem('location', JSON.stringify([location]));
+			     } 
+			     else {
+			     	storedLocations.push(location);
+			     	localStorage.setItem('location', JSON.parse(storedLocations));
+			     };
+
+
+
 			}, function (err) {
 			    // Обработка ошибки.
 			});
 		});
 	});
 });
+
+
+
+
