@@ -4,6 +4,27 @@ body {
 }
 #map {
   height: 425px;
-  width: 100%;
+  width: 60%;
   margin-top: 25px;
+  position: fixed;
+  left: 18%;
+}
+ul {
+	width: 250px;
+	height: 500px;
+	position: fixed;
+	left: 10%;
+	border: 2px solid white;
+	border-radius: 6px;
+	background-color: black;
+}
+li {
+	text-align: left;
+	padding-top: 10px;
+	font-size: 1.1em;
+}
+a {
+	padding: 2px;
+	color: red;
+	font-family: arial;
 }

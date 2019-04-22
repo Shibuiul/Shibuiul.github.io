@@ -9,6 +9,14 @@ $( document ).ready(function() {
 	        });
 
 
+			if (localStorage.history) {
+							ymaps.ready(function() {
+							myMap.setCenter(localStorage.history.split(','));
+							localStorage.removeItem('history');
+				    	});
+				    };
+
+
 	    $('#find').click(function(){
 			var myGeocoder = ymaps.geocode($('#place').val());
 			myGeocoder.then(function (res) {
@@ -24,10 +32,10 @@ $( document ).ready(function() {
 			     } 
 			     else {
 			     	storedLocations.push(location);
-			     	localStorage.setItem('location', JSON.parse(storedLocations));
+			     	localStorage.setItem('location', JSON.stringify(storedLocations));
 			     };
 
-
+			     
 
 			}, function (err) {
 			    // Обработка ошибки.
