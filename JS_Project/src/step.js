@@ -1,6 +1,6 @@
-if (!searchedLocations === undefined) {
-var searchedLocations = JSON.parse(localStorage.location),
-	list = document.createElement('ul');
+var searchedLocations = JSON.parse(localStorage.getItem('location'))
+if (searchedLocations != undefined) {
+	var list = document.createElement('ul');
 	document.body.prepend(list);
 	for (var i = 0; i < searchedLocations.length; i++) {
 		var listItem = document.createElement('li'),
@@ -12,7 +12,7 @@ var searchedLocations = JSON.parse(localStorage.location),
 	};
 	$('ul > li > a').click(function(e){
 	localStorage.setItem('history', e.currentTarget.innerHTML);
-});
+});	
 };
 
 $('#historyClear').click(function(){
@@ -20,9 +20,13 @@ $('#historyClear').click(function(){
 		$('ul > li > a')[i].innerHTML = "";
 	};
 	localStorage.removeItem('location');
+	filler = document.createElement('p');
+	list.prepend(filler);
+	filler.innerHTML = 'Готово, обновите страницу';
 });
 
-if (searchedLocations === undefined) {
+
+if (searchedLocations === null) {
 	var nothing = document.body.appendChild(document.createElement('h1')),
 		filler = document.createElement('a');
 

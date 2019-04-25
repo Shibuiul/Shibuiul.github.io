@@ -18,6 +18,9 @@ ul {
 	border-radius: 6px;
 	background-color: black;
 }
+ul > p {
+	color: white;
+}
 li {
 	text-align: left;
 	padding-top: 10px;
