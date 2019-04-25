@@ -28,3 +28,11 @@ a {
 	color: red;
 	font-family: arial;
 }
+h1 {
+	font-family: monospace;	
+}
+h1 > a {
+	color: white;
+	font-size: 26px;
+	margin-left: 25px;
+}
