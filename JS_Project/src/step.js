@@ -12,3 +12,9 @@ var searchedLocations = JSON.parse(localStorage.location),
 	$('ul > li > a').click(function(e){
 	localStorage.setItem('history', e.currentTarget.innerHTML);
 });
+
+$('#historyClear').click(function(){
+	for (var i = 0; i < $('ul > li > a').length; i++) {
+		$('ul > li > a')[i].innerHTML = undefined;
+	};
+});
